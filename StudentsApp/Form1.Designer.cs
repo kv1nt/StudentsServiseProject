@@ -79,14 +79,14 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.closeToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.fileToolStripMenuItem.Text = "Файл";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Text = "Вихід";
             // 
             // toolsToolStripMenuItem
             // 
@@ -97,66 +97,66 @@
             this.removeStudentToolStripMenuItem,
             this.changeInfoStudentToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.toolsToolStripMenuItem.Text = "Tools";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.toolsToolStripMenuItem.Text = "Інструменти";
             // 
             // showAllStudentsToolStripMenuItem
             // 
             this.showAllStudentsToolStripMenuItem.Name = "showAllStudentsToolStripMenuItem";
-            this.showAllStudentsToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.showAllStudentsToolStripMenuItem.Text = "Show all students";
+            this.showAllStudentsToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.showAllStudentsToolStripMenuItem.Text = "Показати всіх студентів";
             // 
             // findStudentToolStripMenuItem
             // 
             this.findStudentToolStripMenuItem.Name = "findStudentToolStripMenuItem";
-            this.findStudentToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.findStudentToolStripMenuItem.Text = "Find student";
+            this.findStudentToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.findStudentToolStripMenuItem.Text = "Знайти студента";
             // 
             // addStudentToolStripMenuItem
             // 
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.addStudentToolStripMenuItem.Text = "Add student";
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.addStudentToolStripMenuItem.Text = "Додати студента";
             // 
             // removeStudentToolStripMenuItem
             // 
             this.removeStudentToolStripMenuItem.Name = "removeStudentToolStripMenuItem";
-            this.removeStudentToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.removeStudentToolStripMenuItem.Text = "Remove student";
+            this.removeStudentToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.removeStudentToolStripMenuItem.Text = "Видалити студента";
             // 
             // changeInfoStudentToolStripMenuItem
             // 
             this.changeInfoStudentToolStripMenuItem.Name = "changeInfoStudentToolStripMenuItem";
-            this.changeInfoStudentToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.changeInfoStudentToolStripMenuItem.Text = "Change info student";
+            this.changeInfoStudentToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.changeInfoStudentToolStripMenuItem.Text = "Змінити дані про студента";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewHelpToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.helpToolStripMenuItem.Text = "Допомога";
             // 
             // viewHelpToolStripMenuItem
             // 
             this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.viewHelpToolStripMenuItem.Text = "View help";
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.viewHelpToolStripMenuItem.Text = "Як користуватись програмою";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewInfoAboutProgramToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.aboutToolStripMenuItem.Text = "Про нас";
             // 
             // viewInfoAboutProgramToolStripMenuItem
             // 
             this.viewInfoAboutProgramToolStripMenuItem.Name = "viewInfoAboutProgramToolStripMenuItem";
-            this.viewInfoAboutProgramToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.viewInfoAboutProgramToolStripMenuItem.Text = "View info about program";
+            this.viewInfoAboutProgramToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.viewInfoAboutProgramToolStripMenuItem.Text = "Показати інформацію";
             // 
             // edit_btn
             // 
