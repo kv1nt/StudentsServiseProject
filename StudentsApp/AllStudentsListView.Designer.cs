@@ -53,7 +53,7 @@
             this.listViewAllStud.GridLines = true;
             this.listViewAllStud.Location = new System.Drawing.Point(0, 0);
             this.listViewAllStud.Name = "listViewAllStud";
-            this.listViewAllStud.Size = new System.Drawing.Size(1081, 457);
+            this.listViewAllStud.Size = new System.Drawing.Size(1165, 451);
             this.listViewAllStud.TabIndex = 0;
             this.listViewAllStud.UseCompatibleStateImageBehavior = false;
             this.listViewAllStud.View = System.Windows.Forms.View.Details;
@@ -96,7 +96,7 @@
             // mphone_col
             // 
             this.mphone_col.Text = "Mobile phone";
-            this.mphone_col.Width = 179;
+            this.mphone_col.Width = 336;
             // 
             // panelAllStud
             // 
@@ -105,7 +105,7 @@
             this.Controls.Add(this.listViewAllStud);
             this.Location = new System.Drawing.Point(13, 13);
             this.Name = "panelAllStud";
-            this.Size = new System.Drawing.Size(1087, 460);
+            this.Size = new System.Drawing.Size(1168, 451);
             this.ResumeLayout(false);
 
         }

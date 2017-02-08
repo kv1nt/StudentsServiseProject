@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -83,13 +83,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Find Student by Surname";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(98, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 20);
-            this.textBox1.TabIndex = 1;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(348, 21);
@@ -98,6 +91,13 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(98, 26);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(231, 20);
+            this.textBox1.TabIndex = 1;
             // 
             // groupBox2
             // 
@@ -160,7 +160,7 @@
             this.listViewAllStud.GridLines = true;
             this.listViewAllStud.Location = new System.Drawing.Point(0, 102);
             this.listViewAllStud.Name = "listViewAllStud";
-            this.listViewAllStud.Size = new System.Drawing.Size(1087, 113);
+            this.listViewAllStud.Size = new System.Drawing.Size(1148, 113);
             this.listViewAllStud.TabIndex = 4;
             this.listViewAllStud.UseCompatibleStateImageBehavior = false;
             this.listViewAllStud.View = System.Windows.Forms.View.Details;
@@ -219,7 +219,7 @@
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(3, 327);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1084, 114);
+            this.listView1.Size = new System.Drawing.Size(1145, 114);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -293,7 +293,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FindStudentPanel";
-            this.Size = new System.Drawing.Size(1087, 444);
+            this.Size = new System.Drawing.Size(1168, 451);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

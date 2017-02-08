@@ -64,7 +64,7 @@
             this.listViewAllStud.GridLines = true;
             this.listViewAllStud.Location = new System.Drawing.Point(0, 114);
             this.listViewAllStud.Name = "listViewAllStud";
-            this.listViewAllStud.Size = new System.Drawing.Size(1084, 327);
+            this.listViewAllStud.Size = new System.Drawing.Size(1165, 334);
             this.listViewAllStud.TabIndex = 6;
             this.listViewAllStud.UseCompatibleStateImageBehavior = false;
             this.listViewAllStud.View = System.Windows.Forms.View.Details;
@@ -203,7 +203,7 @@
             this.Controls.Add(this.listViewAllStud);
             this.Controls.Add(this.groupBox1);
             this.Name = "RemoveStudPanel";
-            this.Size = new System.Drawing.Size(1087, 444);
+            this.Size = new System.Drawing.Size(1168, 451);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

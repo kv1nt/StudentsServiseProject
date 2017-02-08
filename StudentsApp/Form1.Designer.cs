@@ -55,14 +55,14 @@
             // 
             // panel
             // 
-            this.panel.Location = new System.Drawing.Point(12, 65);
+            this.panel.Location = new System.Drawing.Point(12, 68);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1037, 444);
+            this.panel.Size = new System.Drawing.Size(1168, 451);
             this.panel.TabIndex = 1;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Azure;
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.toolsToolStripMenuItem,
