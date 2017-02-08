@@ -1,0 +1,17 @@
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\StudentsApp.exe.config
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\StudentsApp.exe
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\StudentsApp.pdb
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.csprojResolveAssemblyReference.cache
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.Form1.resources
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.Properties.Resources.resources
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.csproj.GenerateResource.Cache
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.exe
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.pdb
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.panelAllStud.resources
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.FindStudentPanel.resources
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.RemoveStudPanel.resources
+c:\users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.AddStudentPanel.resources
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\EntityFramework.dll
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\EntityFramework.xml
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\EntityFramework.SqlServer.xml
