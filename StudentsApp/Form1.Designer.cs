@@ -149,8 +149,8 @@
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewInfoAboutProgramToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.aboutToolStripMenuItem.Text = "Про нас";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.aboutToolStripMenuItem.Text = "Про програму";
             // 
             // viewInfoAboutProgramToolStripMenuItem
             // 
@@ -243,7 +243,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Students Data Base Service";
+            this.Text = "База данних студентів";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
