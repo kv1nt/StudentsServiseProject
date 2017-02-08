@@ -51,7 +51,7 @@
             this.birthday_col,
             this.mphone_col});
             this.listViewAllStud.GridLines = true;
-            this.listViewAllStud.Location = new System.Drawing.Point(0, 0);
+            this.listViewAllStud.Location = new System.Drawing.Point(3, 3);
             this.listViewAllStud.Name = "listViewAllStud";
             this.listViewAllStud.Size = new System.Drawing.Size(1165, 451);
             this.listViewAllStud.TabIndex = 0;
@@ -65,38 +65,38 @@
             // 
             // name_col
             // 
-            this.name_col.Text = "Name";
-            this.name_col.Width = 178;
+            this.name_col.Text = "Ім\'я";
+            this.name_col.Width = 196;
             // 
             // patronymic_col
             // 
-            this.patronymic_col.Text = "Patronymic";
-            this.patronymic_col.Width = 199;
+            this.patronymic_col.Text = "По батькові";
+            this.patronymic_col.Width = 239;
             // 
             // surname_col
             // 
-            this.surname_col.Text = "Surname";
-            this.surname_col.Width = 188;
+            this.surname_col.Text = "Фамілія";
+            this.surname_col.Width = 209;
             // 
             // sex_col
             // 
-            this.sex_col.Text = "Sex";
-            this.sex_col.Width = 59;
+            this.sex_col.Text = "Стать";
+            this.sex_col.Width = 91;
             // 
             // age_col
             // 
-            this.age_col.Text = "Age";
-            this.age_col.Width = 48;
+            this.age_col.Text = "Вік";
+            this.age_col.Width = 68;
             // 
             // birthday_col
             // 
-            this.birthday_col.Text = "Date of Birrth";
-            this.birthday_col.Width = 121;
+            this.birthday_col.Text = "Дата народження";
+            this.birthday_col.Width = 112;
             // 
             // mphone_col
             // 
-            this.mphone_col.Text = "Mobile phone";
-            this.mphone_col.Width = 336;
+            this.mphone_col.Text = "Мобільний номер телефона";
+            this.mphone_col.Width = 214;
             // 
             // panelAllStud
             // 
