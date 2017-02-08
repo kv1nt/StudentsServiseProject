@@ -29,14 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.buttonShowAllStud = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
-            this.findStudent_btn = new System.Windows.Forms.Button();
-            this.removeStud_btn = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.about_btn = new System.Windows.Forms.Button();
-            this.exit_btn = new System.Windows.Forms.Button();
-            this.addStudent_btn = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,19 +43,15 @@
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewInfoAboutProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox1.SuspendLayout();
+            this.edit_btn = new System.Windows.Forms.Button();
+            this.about_btn = new System.Windows.Forms.Button();
+            this.exit_btn = new System.Windows.Forms.Button();
+            this.addStudent_btn = new System.Windows.Forms.Button();
+            this.removeStud_btn = new System.Windows.Forms.Button();
+            this.buttonShowAllStud = new System.Windows.Forms.Button();
+            this.findStudent_btn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // buttonShowAllStud
-            // 
-            this.buttonShowAllStud.Image = global::StudentsApp.Properties.Resources.database_3;
-            this.buttonShowAllStud.Location = new System.Drawing.Point(12, 25);
-            this.buttonShowAllStud.Name = "buttonShowAllStud";
-            this.buttonShowAllStud.Size = new System.Drawing.Size(39, 34);
-            this.buttonShowAllStud.TabIndex = 0;
-            this.buttonShowAllStud.UseVisualStyleBackColor = true;
-            this.buttonShowAllStud.Click += new System.EventHandler(this.buttonShowAllStud_Click);
             // 
             // panel
             // 
@@ -70,68 +59,6 @@
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(1037, 444);
             this.panel.TabIndex = 1;
-            // 
-            // findStudent_btn
-            // 
-            this.findStudent_btn.Location = new System.Drawing.Point(19, 69);
-            this.findStudent_btn.Name = "findStudent_btn";
-            this.findStudent_btn.Size = new System.Drawing.Size(64, 42);
-            this.findStudent_btn.TabIndex = 2;
-            this.findStudent_btn.Text = "Find student";
-            this.findStudent_btn.UseVisualStyleBackColor = true;
-            this.findStudent_btn.Click += new System.EventHandler(this.findStudent_btn_Click);
-            // 
-            // removeStud_btn
-            // 
-            this.removeStud_btn.Location = new System.Drawing.Point(19, 117);
-            this.removeStud_btn.Name = "removeStud_btn";
-            this.removeStud_btn.Size = new System.Drawing.Size(64, 42);
-            this.removeStud_btn.TabIndex = 3;
-            this.removeStud_btn.Text = "Remove student";
-            this.removeStud_btn.UseVisualStyleBackColor = true;
-            this.removeStud_btn.Click += new System.EventHandler(this.removeStud_btn_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.about_btn);
-            this.groupBox1.Controls.Add(this.exit_btn);
-            this.groupBox1.Controls.Add(this.addStudent_btn);
-            this.groupBox1.Controls.Add(this.removeStud_btn);
-            this.groupBox1.Controls.Add(this.findStudent_btn);
-            this.groupBox1.Location = new System.Drawing.Point(1063, 65);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(103, 317);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Options";
-            // 
-            // about_btn
-            // 
-            this.about_btn.Location = new System.Drawing.Point(19, 261);
-            this.about_btn.Name = "about_btn";
-            this.about_btn.Size = new System.Drawing.Size(64, 42);
-            this.about_btn.TabIndex = 6;
-            this.about_btn.Text = "About";
-            this.about_btn.UseVisualStyleBackColor = true;
-            // 
-            // exit_btn
-            // 
-            this.exit_btn.Location = new System.Drawing.Point(19, 213);
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(64, 42);
-            this.exit_btn.TabIndex = 5;
-            this.exit_btn.Text = "Exit";
-            this.exit_btn.UseVisualStyleBackColor = true;
-            // 
-            // addStudent_btn
-            // 
-            this.addStudent_btn.Location = new System.Drawing.Point(19, 165);
-            this.addStudent_btn.Name = "addStudent_btn";
-            this.addStudent_btn.Size = new System.Drawing.Size(64, 42);
-            this.addStudent_btn.TabIndex = 4;
-            this.addStudent_btn.Text = "Add student";
-            this.addStudent_btn.UseVisualStyleBackColor = true;
-            this.addStudent_btn.Click += new System.EventHandler(this.addStudent_btn_Click);
             // 
             // menuStrip1
             // 
@@ -231,21 +158,92 @@
             this.viewInfoAboutProgramToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.viewInfoAboutProgramToolStripMenuItem.Text = "View info about program";
             // 
+            // edit_btn
+            // 
+            this.edit_btn.Image = global::StudentsApp.Properties.Resources.black_edit;
+            this.edit_btn.Location = new System.Drawing.Point(184, 28);
+            this.edit_btn.Name = "edit_btn";
+            this.edit_btn.Size = new System.Drawing.Size(38, 34);
+            this.edit_btn.TabIndex = 7;
+            this.edit_btn.UseVisualStyleBackColor = true;
+            // 
+            // about_btn
+            // 
+            this.about_btn.Image = global::StudentsApp.Properties.Resources.info2;
+            this.about_btn.Location = new System.Drawing.Point(228, 28);
+            this.about_btn.Name = "about_btn";
+            this.about_btn.Size = new System.Drawing.Size(37, 34);
+            this.about_btn.TabIndex = 6;
+            this.about_btn.UseVisualStyleBackColor = true;
+            // 
+            // exit_btn
+            // 
+            this.exit_btn.Image = global::StudentsApp.Properties.Resources.exit__1_;
+            this.exit_btn.Location = new System.Drawing.Point(271, 28);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(38, 34);
+            this.exit_btn.TabIndex = 5;
+            this.exit_btn.UseVisualStyleBackColor = true;
+            // 
+            // addStudent_btn
+            // 
+            this.addStudent_btn.Image = global::StudentsApp.Properties.Resources.add;
+            this.addStudent_btn.Location = new System.Drawing.Point(54, 28);
+            this.addStudent_btn.Name = "addStudent_btn";
+            this.addStudent_btn.Size = new System.Drawing.Size(36, 34);
+            this.addStudent_btn.TabIndex = 4;
+            this.addStudent_btn.UseVisualStyleBackColor = true;
+            this.addStudent_btn.Click += new System.EventHandler(this.addStudent_btn_Click);
+            // 
+            // removeStud_btn
+            // 
+            this.removeStud_btn.Image = global::StudentsApp.Properties.Resources.button_cancel__1_;
+            this.removeStud_btn.Location = new System.Drawing.Point(12, 27);
+            this.removeStud_btn.Name = "removeStud_btn";
+            this.removeStud_btn.Size = new System.Drawing.Size(36, 35);
+            this.removeStud_btn.TabIndex = 3;
+            this.removeStud_btn.UseVisualStyleBackColor = true;
+            this.removeStud_btn.Click += new System.EventHandler(this.removeStud_btn_Click);
+            // 
+            // buttonShowAllStud
+            // 
+            this.buttonShowAllStud.Image = global::StudentsApp.Properties.Resources.database_3;
+            this.buttonShowAllStud.Location = new System.Drawing.Point(139, 28);
+            this.buttonShowAllStud.Name = "buttonShowAllStud";
+            this.buttonShowAllStud.Size = new System.Drawing.Size(39, 34);
+            this.buttonShowAllStud.TabIndex = 0;
+            this.buttonShowAllStud.UseVisualStyleBackColor = true;
+            this.buttonShowAllStud.Click += new System.EventHandler(this.buttonShowAllStud_Click);
+            // 
+            // findStudent_btn
+            // 
+            this.findStudent_btn.Image = global::StudentsApp.Properties.Resources.search;
+            this.findStudent_btn.Location = new System.Drawing.Point(96, 28);
+            this.findStudent_btn.Name = "findStudent_btn";
+            this.findStudent_btn.Size = new System.Drawing.Size(37, 34);
+            this.findStudent_btn.TabIndex = 2;
+            this.findStudent_btn.UseVisualStyleBackColor = true;
+            this.findStudent_btn.Click += new System.EventHandler(this.findStudent_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1192, 531);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.buttonShowAllStud);
+            this.Controls.Add(this.findStudent_btn);
+            this.Controls.Add(this.edit_btn);
+            this.Controls.Add(this.about_btn);
+            this.Controls.Add(this.exit_btn);
+            this.Controls.Add(this.panel);
+            this.Controls.Add(this.addStudent_btn);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.removeStud_btn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Students Data Base Service";
-            this.groupBox1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -259,7 +257,6 @@
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Button findStudent_btn;
         private System.Windows.Forms.Button removeStud_btn;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button about_btn;
         private System.Windows.Forms.Button exit_btn;
         private System.Windows.Forms.Button addStudent_btn;
@@ -277,6 +274,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewInfoAboutProgramToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeInfoStudentToolStripMenuItem;
+        private System.Windows.Forms.Button edit_btn;
     }
 }
 
