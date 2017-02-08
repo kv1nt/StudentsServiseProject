@@ -56,17 +56,17 @@
             // 
             // buttonShowAllStud
             // 
-            this.buttonShowAllStud.Location = new System.Drawing.Point(19, 19);
+            this.buttonShowAllStud.Image = global::StudentsApp.Properties.Resources.database_3;
+            this.buttonShowAllStud.Location = new System.Drawing.Point(12, 25);
             this.buttonShowAllStud.Name = "buttonShowAllStud";
-            this.buttonShowAllStud.Size = new System.Drawing.Size(64, 44);
+            this.buttonShowAllStud.Size = new System.Drawing.Size(39, 34);
             this.buttonShowAllStud.TabIndex = 0;
-            this.buttonShowAllStud.Text = "Show all students";
             this.buttonShowAllStud.UseVisualStyleBackColor = true;
             this.buttonShowAllStud.Click += new System.EventHandler(this.buttonShowAllStud_Click);
             // 
             // panel
             // 
-            this.panel.Location = new System.Drawing.Point(12, 45);
+            this.panel.Location = new System.Drawing.Point(12, 65);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(1037, 444);
             this.panel.TabIndex = 1;
@@ -96,7 +96,6 @@
             this.groupBox1.Controls.Add(this.about_btn);
             this.groupBox1.Controls.Add(this.exit_btn);
             this.groupBox1.Controls.Add(this.addStudent_btn);
-            this.groupBox1.Controls.Add(this.buttonShowAllStud);
             this.groupBox1.Controls.Add(this.removeStud_btn);
             this.groupBox1.Controls.Add(this.findStudent_btn);
             this.groupBox1.Location = new System.Drawing.Point(1063, 65);
@@ -241,6 +240,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.buttonShowAllStud);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
