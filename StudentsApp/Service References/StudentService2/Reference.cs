@@ -9,17 +9,574 @@
 //------------------------------------------------------------------------------
 
 namespace StudentsApp.StudentService2 {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="StudentInfo", Namespace="http://schemas.datacontract.org/2004/07/StudService1")]
+    [System.SerializableAttribute()]
+    public partial class StudentInfo : StudentsApp.StudentService2.IdEntity {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private StudentsApp.StudentService2.Adress AdressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AgeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime BirthdateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private StudentsApp.StudentService2.Group GroupField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int NumberRecordBookField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private StudentsApp.StudentService2.ParentsInfo ParentsInfoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SexField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private StudentsApp.StudentService2.Phone StudentPhoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private StudentsApp.StudentService2.StudentProgress StudentProgressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SurnameField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public StudentsApp.StudentService2.Adress Adress {
+            get {
+                return this.AdressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AdressField, value) != true)) {
+                    this.AdressField = value;
+                    this.RaisePropertyChanged("Adress");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Age {
+            get {
+                return this.AgeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AgeField, value) != true)) {
+                    this.AgeField = value;
+                    this.RaisePropertyChanged("Age");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Birthdate {
+            get {
+                return this.BirthdateField;
+            }
+            set {
+                if ((this.BirthdateField.Equals(value) != true)) {
+                    this.BirthdateField = value;
+                    this.RaisePropertyChanged("Birthdate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public StudentsApp.StudentService2.Group Group {
+            get {
+                return this.GroupField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GroupField, value) != true)) {
+                    this.GroupField = value;
+                    this.RaisePropertyChanged("Group");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int NumberRecordBook {
+            get {
+                return this.NumberRecordBookField;
+            }
+            set {
+                if ((this.NumberRecordBookField.Equals(value) != true)) {
+                    this.NumberRecordBookField = value;
+                    this.RaisePropertyChanged("NumberRecordBook");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public StudentsApp.StudentService2.ParentsInfo ParentsInfo {
+            get {
+                return this.ParentsInfoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ParentsInfoField, value) != true)) {
+                    this.ParentsInfoField = value;
+                    this.RaisePropertyChanged("ParentsInfo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Sex {
+            get {
+                return this.SexField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SexField, value) != true)) {
+                    this.SexField = value;
+                    this.RaisePropertyChanged("Sex");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public StudentsApp.StudentService2.Phone StudentPhone {
+            get {
+                return this.StudentPhoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StudentPhoneField, value) != true)) {
+                    this.StudentPhoneField = value;
+                    this.RaisePropertyChanged("StudentPhone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public StudentsApp.StudentService2.StudentProgress StudentProgress {
+            get {
+                return this.StudentProgressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StudentProgressField, value) != true)) {
+                    this.StudentProgressField = value;
+                    this.RaisePropertyChanged("StudentProgress");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Surname {
+            get {
+                return this.SurnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SurnameField, value) != true)) {
+                    this.SurnameField = value;
+                    this.RaisePropertyChanged("Surname");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="IdEntity", Namespace="http://schemas.datacontract.org/2004/07/StudService1")]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(StudentsApp.StudentService2.Adress))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(StudentsApp.StudentService2.Group))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(StudentsApp.StudentService2.ParentsInfo))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(StudentsApp.StudentService2.Phone))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(StudentsApp.StudentService2.Relation))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(StudentsApp.StudentService2.StudentProgress))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(StudentsApp.StudentService2.StudentInfo))]
+    public partial class IdEntity : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Adress", Namespace="http://schemas.datacontract.org/2004/07/StudService1")]
+    [System.SerializableAttribute()]
+    public partial class Adress : StudentsApp.StudentService2.IdEntity {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdAdressField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IdAdress {
+            get {
+                return this.IdAdressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdAdressField, value) != true)) {
+                    this.IdAdressField = value;
+                    this.RaisePropertyChanged("IdAdress");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Group", Namespace="http://schemas.datacontract.org/2004/07/StudService1")]
+    [System.SerializableAttribute()]
+    public partial class Group : StudentsApp.StudentService2.IdEntity {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SpecialityField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Speciality {
+            get {
+                return this.SpecialityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SpecialityField, value) != true)) {
+                    this.SpecialityField = value;
+                    this.RaisePropertyChanged("Speciality");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ParentsInfo", Namespace="http://schemas.datacontract.org/2004/07/StudService1")]
+    [System.SerializableAttribute()]
+    public partial class ParentsInfo : StudentsApp.StudentService2.IdEntity {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FatherFirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FatherSecondNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FatherWorkPlaceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MotherFirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MotherSecondNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MotherWorkPlaceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private StudentsApp.StudentService2.Phone PhoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private StudentsApp.StudentService2.Relation RelationField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FatherFirstName {
+            get {
+                return this.FatherFirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FatherFirstNameField, value) != true)) {
+                    this.FatherFirstNameField = value;
+                    this.RaisePropertyChanged("FatherFirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FatherSecondName {
+            get {
+                return this.FatherSecondNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FatherSecondNameField, value) != true)) {
+                    this.FatherSecondNameField = value;
+                    this.RaisePropertyChanged("FatherSecondName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FatherWorkPlace {
+            get {
+                return this.FatherWorkPlaceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FatherWorkPlaceField, value) != true)) {
+                    this.FatherWorkPlaceField = value;
+                    this.RaisePropertyChanged("FatherWorkPlace");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MotherFirstName {
+            get {
+                return this.MotherFirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MotherFirstNameField, value) != true)) {
+                    this.MotherFirstNameField = value;
+                    this.RaisePropertyChanged("MotherFirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MotherSecondName {
+            get {
+                return this.MotherSecondNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MotherSecondNameField, value) != true)) {
+                    this.MotherSecondNameField = value;
+                    this.RaisePropertyChanged("MotherSecondName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MotherWorkPlace {
+            get {
+                return this.MotherWorkPlaceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MotherWorkPlaceField, value) != true)) {
+                    this.MotherWorkPlaceField = value;
+                    this.RaisePropertyChanged("MotherWorkPlace");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public StudentsApp.StudentService2.Phone Phone {
+            get {
+                return this.PhoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhoneField, value) != true)) {
+                    this.PhoneField = value;
+                    this.RaisePropertyChanged("Phone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public StudentsApp.StudentService2.Relation Relation {
+            get {
+                return this.RelationField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RelationField, value) != true)) {
+                    this.RelationField = value;
+                    this.RaisePropertyChanged("Relation");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Phone", Namespace="http://schemas.datacontract.org/2004/07/StudService1")]
+    [System.SerializableAttribute()]
+    public partial class Phone : StudentsApp.StudentService2.IdEntity {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdPhoneField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int IdPhone {
+            get {
+                return this.IdPhoneField;
+            }
+            set {
+                if ((this.IdPhoneField.Equals(value) != true)) {
+                    this.IdPhoneField = value;
+                    this.RaisePropertyChanged("IdPhone");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Relation", Namespace="http://schemas.datacontract.org/2004/07/StudService1")]
+    [System.SerializableAttribute()]
+    public partial class Relation : StudentsApp.StudentService2.IdEntity {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private StudentsApp.StudentService2.Phone[] PhonesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SecondNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WorkPlaceField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public StudentsApp.StudentService2.Phone[] Phones {
+            get {
+                return this.PhonesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhonesField, value) != true)) {
+                    this.PhonesField = value;
+                    this.RaisePropertyChanged("Phones");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SecondName {
+            get {
+                return this.SecondNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SecondNameField, value) != true)) {
+                    this.SecondNameField = value;
+                    this.RaisePropertyChanged("SecondName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string WorkPlace {
+            get {
+                return this.WorkPlaceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WorkPlaceField, value) != true)) {
+                    this.WorkPlaceField = value;
+                    this.RaisePropertyChanged("WorkPlace");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="StudentProgress", Namespace="http://schemas.datacontract.org/2004/07/StudService1")]
+    [System.SerializableAttribute()]
+    public partial class StudentProgress : StudentsApp.StudentService2.IdEntity {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private float ProgressField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public float Progress {
+            get {
+                return this.ProgressField;
+            }
+            set {
+                if ((this.ProgressField.Equals(value) != true)) {
+                    this.ProgressField = value;
+                    this.RaisePropertyChanged("Progress");
+                }
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="StudentService2.IStudentsServiceApp")]
     public interface IStudentsServiceApp {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/showMessage", ReplyAction="http://tempuri.org/IStudentsServiceApp/showMessageResponse")]
-        string showMessage();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/AddNewStudent", ReplyAction="http://tempuri.org/IStudentsServiceApp/AddNewStudentResponse")]
+        void AddNewStudent(string firstName, string lastName, string surname, int age, string sex, int numbRecBook, System.DateTime birthDateStud);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/showMessage", ReplyAction="http://tempuri.org/IStudentsServiceApp/showMessageResponse")]
-        System.Threading.Tasks.Task<string> showMessageAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/AddNewStudent", ReplyAction="http://tempuri.org/IStudentsServiceApp/AddNewStudentResponse")]
+        System.Threading.Tasks.Task AddNewStudentAsync(string firstName, string lastName, string surname, int age, string sex, int numbRecBook, System.DateTime birthDateStud);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/StudetsInfoList", ReplyAction="http://tempuri.org/IStudentsServiceApp/StudetsInfoListResponse")]
+        StudentsApp.StudentService2.StudentInfo[] StudetsInfoList();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/StudetsInfoList", ReplyAction="http://tempuri.org/IStudentsServiceApp/StudetsInfoListResponse")]
+        System.Threading.Tasks.Task<StudentsApp.StudentService2.StudentInfo[]> StudetsInfoListAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -49,12 +606,20 @@ namespace StudentsApp.StudentService2 {
                 base(binding, remoteAddress) {
         }
         
-        public string showMessage() {
-            return base.Channel.showMessage();
+        public void AddNewStudent(string firstName, string lastName, string surname, int age, string sex, int numbRecBook, System.DateTime birthDateStud) {
+            base.Channel.AddNewStudent(firstName, lastName, surname, age, sex, numbRecBook, birthDateStud);
         }
         
-        public System.Threading.Tasks.Task<string> showMessageAsync() {
-            return base.Channel.showMessageAsync();
+        public System.Threading.Tasks.Task AddNewStudentAsync(string firstName, string lastName, string surname, int age, string sex, int numbRecBook, System.DateTime birthDateStud) {
+            return base.Channel.AddNewStudentAsync(firstName, lastName, surname, age, sex, numbRecBook, birthDateStud);
+        }
+        
+        public StudentsApp.StudentService2.StudentInfo[] StudetsInfoList() {
+            return base.Channel.StudetsInfoList();
+        }
+        
+        public System.Threading.Tasks.Task<StudentsApp.StudentService2.StudentInfo[]> StudetsInfoListAsync() {
+            return base.Channel.StudetsInfoListAsync();
         }
     }
 }

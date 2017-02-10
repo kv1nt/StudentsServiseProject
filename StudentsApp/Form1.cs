@@ -31,7 +31,7 @@ namespace StudentsApp
         }
 
         StudentsServiceAppClient client = new StudentsServiceAppClient();
-
+       
         private void buttonShowAllStud_Click(object sender, EventArgs e)
         {
             if (!panel.Controls.Contains(panelAllStud.showAllStud))

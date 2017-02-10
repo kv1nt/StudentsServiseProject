@@ -29,20 +29,19 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.MobTelField = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.AgeField = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.LastNameField = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.DateOfBirthField = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.SexField = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NameField = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -62,26 +61,27 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.AddMainInfo_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.AddMainInfo_btn);
+            this.groupBox1.Controls.Add(this.MobTelField);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.AgeField);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.LastNameField);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.DateOfBirthField);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.SexField);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.NameField);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(114, 45);
             this.groupBox1.Name = "groupBox1";
@@ -90,21 +90,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Insert main information";
             // 
-            // button1
+            // MobTelField
             // 
-            this.button1.Location = new System.Drawing.Point(246, 311);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(93, 215);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(234, 20);
-            this.textBox7.TabIndex = 13;
+            this.MobTelField.Location = new System.Drawing.Point(93, 215);
+            this.MobTelField.Name = "MobTelField";
+            this.MobTelField.Size = new System.Drawing.Size(234, 20);
+            this.MobTelField.TabIndex = 13;
             // 
             // label7
             // 
@@ -115,12 +106,12 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Mob phone";
             // 
-            // textBox6
+            // AgeField
             // 
-            this.textBox6.Location = new System.Drawing.Point(246, 142);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(81, 20);
-            this.textBox6.TabIndex = 11;
+            this.AgeField.Location = new System.Drawing.Point(246, 142);
+            this.AgeField.Name = "AgeField";
+            this.AgeField.Size = new System.Drawing.Size(81, 20);
+            this.AgeField.TabIndex = 11;
             // 
             // label6
             // 
@@ -131,37 +122,37 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Age";
             // 
-            // textBox5
+            // LastNameField
             // 
-            this.textBox5.Location = new System.Drawing.Point(93, 63);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(234, 20);
-            this.textBox5.TabIndex = 9;
+            this.LastNameField.Location = new System.Drawing.Point(93, 63);
+            this.LastNameField.Name = "LastNameField";
+            this.LastNameField.Size = new System.Drawing.Size(234, 20);
+            this.LastNameField.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(21, 66);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Surname";
+            this.label5.Text = "LastName";
             // 
-            // textBox4
+            // DateOfBirthField
             // 
-            this.textBox4.Location = new System.Drawing.Point(93, 179);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(234, 20);
-            this.textBox4.TabIndex = 7;
+            this.DateOfBirthField.Location = new System.Drawing.Point(93, 179);
+            this.DateOfBirthField.Name = "DateOfBirthField";
+            this.DateOfBirthField.Size = new System.Drawing.Size(234, 20);
+            this.DateOfBirthField.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(21, 105);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Patronimyc";
+            this.label4.Text = "Surname";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox3
@@ -181,12 +172,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Date of Birth";
             // 
-            // textBox2
+            // SexField
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(74, 20);
-            this.textBox2.TabIndex = 3;
+            this.SexField.Location = new System.Drawing.Point(93, 142);
+            this.SexField.Name = "SexField";
+            this.SexField.Size = new System.Drawing.Size(74, 20);
+            this.SexField.TabIndex = 3;
             // 
             // label2
             // 
@@ -197,12 +188,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Sex";
             // 
-            // textBox1
+            // NameField
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 20);
-            this.textBox1.TabIndex = 1;
+            this.NameField.Location = new System.Drawing.Point(93, 28);
+            this.NameField.Name = "NameField";
+            this.NameField.Size = new System.Drawing.Size(234, 20);
+            this.NameField.TabIndex = 1;
             // 
             // label1
             // 
@@ -376,6 +367,16 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Number of record-book";
             // 
+            // AddMainInfo_btn
+            // 
+            this.AddMainInfo_btn.Location = new System.Drawing.Point(236, 298);
+            this.AddMainInfo_btn.Name = "AddMainInfo_btn";
+            this.AddMainInfo_btn.Size = new System.Drawing.Size(75, 30);
+            this.AddMainInfo_btn.TabIndex = 15;
+            this.AddMainInfo_btn.Text = "Add";
+            this.AddMainInfo_btn.UseVisualStyleBackColor = true;
+            this.AddMainInfo_btn.Click += new System.EventHandler(this.AddMainInfo_btn_Click);
+            // 
             // AddStudentPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -395,20 +396,19 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox LastNameField;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox DateOfBirthField;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox SexField;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NameField;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox AgeField;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox MobTelField;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button2;
@@ -428,5 +428,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button AddMainInfo_btn;
     }
 }

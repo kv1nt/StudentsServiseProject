@@ -23,3 +23,6 @@ C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\bin\EntityFramework.SqlServer.xml
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\obj\Debug\StudService1.Migrations.FirstInit.resources
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\obj\Debug\StudService1.csproj.GenerateResource.Cache
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\bin\DbEntities.dll
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\bin\DbEntities.pdb
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\obj\Debug\StudService1.Migrations.ChangeStructureFields.resources

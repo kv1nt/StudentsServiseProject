@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using DbEntities;
 
 namespace StudService1
 {
@@ -12,6 +13,8 @@ namespace StudService1
     public interface IStudentsServiceApp
     {
         [OperationContract]
-        string  showMessage();      
+        void AddNewStudent(string firstName, string lastName, string surname, int age, string sex, int numbRecBook, DateTime birthDateStud);
+        [OperationContract]
+        List<StudentInfo> StudetsInfoList();
     }
 }

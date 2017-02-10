@@ -4,24 +4,44 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:4563/StudentsServiceApp.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:4563/StudentsServiceApp.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4563/StudentsServiceApp.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/StudService1" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IStudentsServiceApp_showMessage_InputMessage">
-    <wsdl:part name="parameters" element="tns:showMessage" />
+  <wsdl:message name="IStudentsServiceApp_AddNewStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewStudent" />
   </wsdl:message>
-  <wsdl:message name="IStudentsServiceApp_showMessage_OutputMessage">
-    <wsdl:part name="parameters" element="tns:showMessageResponse" />
+  <wsdl:message name="IStudentsServiceApp_AddNewStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_StudetsInfoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:StudetsInfoList" />
+  </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_StudetsInfoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StudetsInfoListResponse" />
   </wsdl:message>
   <wsdl:portType name="IStudentsServiceApp">
-    <wsdl:operation name="showMessage">
-      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/showMessage" message="tns:IStudentsServiceApp_showMessage_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/showMessageResponse" message="tns:IStudentsServiceApp_showMessage_OutputMessage" />
+    <wsdl:operation name="AddNewStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/AddNewStudent" message="tns:IStudentsServiceApp_AddNewStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/AddNewStudentResponse" message="tns:IStudentsServiceApp_AddNewStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StudetsInfoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/StudetsInfoList" message="tns:IStudentsServiceApp_StudetsInfoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/StudetsInfoListResponse" message="tns:IStudentsServiceApp_StudetsInfoList_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IStudentsServiceApp" type="tns:IStudentsServiceApp">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="showMessage">
-      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/showMessage" style="document" />
+    <wsdl:operation name="AddNewStudent">
+      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/AddNewStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StudetsInfoList">
+      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/StudetsInfoList" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

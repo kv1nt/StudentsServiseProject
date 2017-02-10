@@ -22,6 +22,7 @@
     <MetadataSource Address="http://localhost:4563/StudentsServiceApp.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
+    <MetadataFile FileName="StudentsServiceApp2.xsd" MetadataType="Schema" ID="0d7fed0e-5479-4b2c-b7fd-56765b29ae5e" SourceId="1" SourceUrl="http://localhost:4563/StudentsServiceApp.svc?xsd=xsd2" />
     <MetadataFile FileName="StudentsServiceApp.xsd" MetadataType="Schema" ID="373e0c6f-4816-4c3b-b7ba-0e852c792b76" SourceId="1" SourceUrl="http://localhost:4563/StudentsServiceApp.svc?xsd=xsd0" />
     <MetadataFile FileName="StudentsServiceApp1.xsd" MetadataType="Schema" ID="2e4a0870-bbd7-43f8-af57-a89b4f76869f" SourceId="1" SourceUrl="http://localhost:4563/StudentsServiceApp.svc?xsd=xsd1" />
     <MetadataFile FileName="StudentsServiceApp.disco" MetadataType="Disco" ID="f415a145-6243-4e3c-be0e-4df2674a6fcc" SourceId="1" SourceUrl="http://localhost:4563/StudentsServiceApp.svc?disco" />

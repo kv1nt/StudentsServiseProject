@@ -160,69 +160,76 @@
             // 
             // edit_btn
             // 
+            this.edit_btn.BackColor = System.Drawing.Color.White;
             this.edit_btn.Image = global::StudentsApp.Properties.Resources.black_edit;
-            this.edit_btn.Location = new System.Drawing.Point(184, 28);
+            this.edit_btn.Location = new System.Drawing.Point(139, 28);
             this.edit_btn.Name = "edit_btn";
             this.edit_btn.Size = new System.Drawing.Size(38, 34);
             this.edit_btn.TabIndex = 7;
-            this.edit_btn.UseVisualStyleBackColor = true;
+            this.edit_btn.UseVisualStyleBackColor = false;
             // 
             // about_btn
             // 
+            this.about_btn.BackColor = System.Drawing.Color.White;
             this.about_btn.Image = global::StudentsApp.Properties.Resources.info2;
             this.about_btn.Location = new System.Drawing.Point(228, 28);
             this.about_btn.Name = "about_btn";
             this.about_btn.Size = new System.Drawing.Size(37, 34);
             this.about_btn.TabIndex = 6;
-            this.about_btn.UseVisualStyleBackColor = true;
+            this.about_btn.UseVisualStyleBackColor = false;
             // 
             // exit_btn
             // 
+            this.exit_btn.BackColor = System.Drawing.Color.White;
             this.exit_btn.Image = global::StudentsApp.Properties.Resources.exit__1_;
             this.exit_btn.Location = new System.Drawing.Point(271, 28);
             this.exit_btn.Name = "exit_btn";
             this.exit_btn.Size = new System.Drawing.Size(38, 34);
             this.exit_btn.TabIndex = 5;
-            this.exit_btn.UseVisualStyleBackColor = true;
+            this.exit_btn.UseVisualStyleBackColor = false;
             // 
             // addStudent_btn
             // 
+            this.addStudent_btn.BackColor = System.Drawing.Color.White;
             this.addStudent_btn.Image = global::StudentsApp.Properties.Resources.add;
             this.addStudent_btn.Location = new System.Drawing.Point(54, 28);
             this.addStudent_btn.Name = "addStudent_btn";
             this.addStudent_btn.Size = new System.Drawing.Size(36, 34);
             this.addStudent_btn.TabIndex = 4;
-            this.addStudent_btn.UseVisualStyleBackColor = true;
+            this.addStudent_btn.UseVisualStyleBackColor = false;
             this.addStudent_btn.Click += new System.EventHandler(this.addStudent_btn_Click);
             // 
             // removeStud_btn
             // 
+            this.removeStud_btn.BackColor = System.Drawing.Color.White;
             this.removeStud_btn.Image = global::StudentsApp.Properties.Resources.button_cancel__1_;
             this.removeStud_btn.Location = new System.Drawing.Point(12, 27);
             this.removeStud_btn.Name = "removeStud_btn";
             this.removeStud_btn.Size = new System.Drawing.Size(36, 35);
             this.removeStud_btn.TabIndex = 3;
-            this.removeStud_btn.UseVisualStyleBackColor = true;
+            this.removeStud_btn.UseVisualStyleBackColor = false;
             this.removeStud_btn.Click += new System.EventHandler(this.removeStud_btn_Click);
             // 
             // buttonShowAllStud
             // 
+            this.buttonShowAllStud.BackColor = System.Drawing.Color.White;
             this.buttonShowAllStud.Image = global::StudentsApp.Properties.Resources.database_3;
-            this.buttonShowAllStud.Location = new System.Drawing.Point(139, 28);
+            this.buttonShowAllStud.Location = new System.Drawing.Point(183, 28);
             this.buttonShowAllStud.Name = "buttonShowAllStud";
             this.buttonShowAllStud.Size = new System.Drawing.Size(39, 34);
             this.buttonShowAllStud.TabIndex = 0;
-            this.buttonShowAllStud.UseVisualStyleBackColor = true;
+            this.buttonShowAllStud.UseVisualStyleBackColor = false;
             this.buttonShowAllStud.Click += new System.EventHandler(this.buttonShowAllStud_Click);
             // 
             // findStudent_btn
             // 
+            this.findStudent_btn.BackColor = System.Drawing.Color.White;
             this.findStudent_btn.Image = global::StudentsApp.Properties.Resources.search;
             this.findStudent_btn.Location = new System.Drawing.Point(96, 28);
             this.findStudent_btn.Name = "findStudent_btn";
             this.findStudent_btn.Size = new System.Drawing.Size(37, 34);
             this.findStudent_btn.TabIndex = 2;
-            this.findStudent_btn.UseVisualStyleBackColor = true;
+            this.findStudent_btn.UseVisualStyleBackColor = false;
             this.findStudent_btn.Click += new System.EventHandler(this.findStudent_btn_Click);
             // 
             // Form1
@@ -230,7 +237,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1192, 531);
+            this.ClientSize = new System.Drawing.Size(1192, 557);
             this.Controls.Add(this.buttonShowAllStud);
             this.Controls.Add(this.findStudent_btn);
             this.Controls.Add(this.edit_btn);

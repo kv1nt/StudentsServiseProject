@@ -75,7 +75,7 @@
             // 
             // surname_col
             // 
-            this.surname_col.Text = "Фамілія";
+            this.surname_col.Text = "Прізвище";
             this.surname_col.Width = 209;
             // 
             // sex_col
@@ -95,7 +95,7 @@
             // 
             // mphone_col
             // 
-            this.mphone_col.Text = "Мобільний номер телефона";
+            this.mphone_col.Text = "Мобільний номер телефону";
             this.mphone_col.Width = 214;
             // 
             // panelAllStud

@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsApp", "StudentsApp\
 		{EAFC02D7-C89D-4ED7-A2CB-D9EF195173D7} = {EAFC02D7-C89D-4ED7-A2CB-D9EF195173D7}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbEntities", "DbEntities\DbEntities.csproj", "{005E03BF-84D6-4639-8EB6-5902FBD48A17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{B0D4D924-4FEE-4B98-BE9B-A2FABEE9A839}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0D4D924-4FEE-4B98-BE9B-A2FABEE9A839}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0D4D924-4FEE-4B98-BE9B-A2FABEE9A839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005E03BF-84D6-4639-8EB6-5902FBD48A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005E03BF-84D6-4639-8EB6-5902FBD48A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005E03BF-84D6-4639-8EB6-5902FBD48A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005E03BF-84D6-4639-8EB6-5902FBD48A17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

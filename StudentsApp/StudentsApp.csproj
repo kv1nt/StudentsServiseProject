@@ -129,11 +129,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\StudentService2\StudentsApp.StudentService2.StudentInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\StudentService2\StudentsServiceApp.wsdl" />
     <None Include="Service References\StudentService2\StudentsServiceApp.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\StudentService2\StudentsServiceApp1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentService2\StudentsServiceApp2.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

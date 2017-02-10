@@ -13,7 +13,7 @@ namespace StudentsApp
     public partial class panelAllStud : UserControl
     {
         private static panelAllStud studListView;
-
+       
         public static panelAllStud showAllStud
         {
             get
@@ -28,5 +28,6 @@ namespace StudentsApp
         {
             InitializeComponent();
         }
+        
     }
 }
