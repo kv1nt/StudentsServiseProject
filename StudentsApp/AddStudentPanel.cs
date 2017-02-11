@@ -44,24 +44,32 @@ namespace StudentsApp
 
         }
 
-        private void AddMainInfo_btn_Click(object sender, EventArgs e)
-        {
-
-            
-            try
+        private void AddMainInfo_btn_Click(object sender, EventArgs e) // Add main info student
+        {            
+          /*  try
             {
-                
-                StudentsServiceAppClient client = new StudentsServiceAppClient();
-                client.AddNewStudent(NameField.Text, LastNameField.Text, SexField.Text, Convert.ToInt32(AgeField.Text.Trim()),
-                                      DateOfBirthField.Text.Trim(), Convert.ToInt32(MobTelField.Text.Trim()), DateTime.Now);
-                client.Close();
-               
+                using (StudentsServiceAppClient client = new StudentsServiceAppClient()) 
+                {
+                    Phone phone = new Phone();
+                    
+                    client.AddNewStudent(NameField.Text, LastNameField.Text, SexField.Text, Convert.ToInt32(NumbRecBookAddField.Text.Trim()), AgeField.Text.Trim(),
+                                         Convert.ToInt32(DateOfBirthField.Text.Trim()), MobTelField.Text);
+                    client.Close();
+                }               
+                string message = "Student is added";
+                string caption = "Add student";
+                MessageBoxButtons button = MessageBoxButtons.OK;
+                MessageBox.Show(message, caption, button);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                string message = ex.Message;
+                string caption = "Error!";
+                MessageBoxButtons button = MessageBoxButtons.OK;
+                MessageBox.Show(message, caption, button);
             }
             
         }
+        */
     }
 }

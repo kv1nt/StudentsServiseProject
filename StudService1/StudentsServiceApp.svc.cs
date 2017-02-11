@@ -19,8 +19,9 @@ namespace StudService1
             }
         }
 
-        public void AddNewStudent(string firstName, string lastName, string surname, int age, string sex, int numbRecBook,
-            DateTime birthDateStud)
+        public void AddNewStudent(string firstName, string lastName, string surname, int numbRecBook, string sex, int age, DateTime birthDateStud, Phone phone)
+
+
         {
             using (StudentsDbContext context = new StudentsDbContext())
             {
@@ -29,10 +30,11 @@ namespace StudService1
                     FirstName = firstName,
                     LastName = lastName,
                     Surname = surname,
-                    Age = age.ToString(),
-                    Sex = sex,
                     NumberRecordBook = numbRecBook,
-                    Birthdate = birthDateStud
+                    Sex = sex,
+                    Age = age,
+                    Birthdate = birthDateStud,
+                    StudentPhones = phone
                 };
 
                 context.StudentInfos.Add(newStudentInfo);
@@ -40,7 +42,7 @@ namespace StudService1
             }
         }
 
-      
+       
     }
 }
 
