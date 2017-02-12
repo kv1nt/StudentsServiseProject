@@ -47,21 +47,23 @@
             this.NumbRecBookAddField = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.PhnesRelatonsAddFielad = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.FatherSpecAddField = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.AddAdditionalInfo_btn = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.ProgressAddField = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.Address = new System.Windows.Forms.Label();
+            this.AddressAddField = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -85,9 +87,9 @@
             this.groupBox1.Controls.Add(this.NameFieldAdd);
             this.groupBox1.Controls.Add(this.NumbRecBookAddField);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Location = new System.Drawing.Point(114, 45);
+            this.groupBox1.Location = new System.Drawing.Point(131, 23);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(369, 359);
+            this.groupBox1.Size = new System.Drawing.Size(379, 392);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Введіть основну інформацію";
@@ -126,7 +128,7 @@
             // 
             // AddMainInfo_btn
             // 
-            this.AddMainInfo_btn.Location = new System.Drawing.Point(236, 298);
+            this.AddMainInfo_btn.Location = new System.Drawing.Point(252, 303);
             this.AddMainInfo_btn.Name = "AddMainInfo_btn";
             this.AddMainInfo_btn.Size = new System.Drawing.Size(75, 30);
             this.AddMainInfo_btn.TabIndex = 15;
@@ -234,59 +236,62 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox15);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.PhnesRelatonsAddFielad);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.FatherSpecAddField);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.textBox13);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.AddAdditionalInfo_btn);
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox10);
+            this.groupBox2.Controls.Add(this.ProgressAddField);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.Address);
+            this.groupBox2.Controls.Add(this.AddressAddField);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Location = new System.Drawing.Point(599, 41);
+            this.groupBox2.Location = new System.Drawing.Point(664, 23);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(368, 363);
+            this.groupBox2.Size = new System.Drawing.Size(378, 392);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Insert additional information";
+            this.groupBox2.Text = "Введіть додаткову інформацію";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // textBox15
+            // PhnesRelatonsAddFielad
             // 
-            this.textBox15.Location = new System.Drawing.Point(99, 253);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(234, 20);
-            this.textBox15.TabIndex = 20;
+            this.PhnesRelatonsAddFielad.Location = new System.Drawing.Point(100, 288);
+            this.PhnesRelatonsAddFielad.Name = "PhnesRelatonsAddFielad";
+            this.PhnesRelatonsAddFielad.Size = new System.Drawing.Size(234, 20);
+            this.PhnesRelatonsAddFielad.TabIndex = 20;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(27, 256);
+            this.label15.Location = new System.Drawing.Point(28, 291);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(43, 13);
+            this.label15.Size = new System.Drawing.Size(58, 13);
             this.label15.TabIndex = 19;
-            this.label15.Text = "Phones";
+            this.label15.Text = "Телефони";
             // 
-            // textBox9
+            // FatherSpecAddField
             // 
-            this.textBox9.Location = new System.Drawing.Point(99, 222);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(234, 20);
-            this.textBox9.TabIndex = 18;
+            this.FatherSpecAddField.Location = new System.Drawing.Point(110, 216);
+            this.FatherSpecAddField.Name = "FatherSpecAddField";
+            this.FatherSpecAddField.Size = new System.Drawing.Size(223, 20);
+            this.FatherSpecAddField.TabIndex = 18;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(27, 225);
+            this.label9.Location = new System.Drawing.Point(27, 219);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 13);
+            this.label9.Size = new System.Drawing.Size(77, 13);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Specialty";
+            this.label9.Text = "Спеціальність";
             // 
             // textBox13
             // 
@@ -300,24 +305,24 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(27, 183);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(37, 13);
+            this.label13.Size = new System.Drawing.Size(67, 13);
             this.label13.TabIndex = 15;
-            this.label13.Text = "Father";
+            this.label13.Text = "Батько ФІБ";
             // 
-            // button2
+            // AddAdditionalInfo_btn
             // 
-            this.button2.Location = new System.Drawing.Point(252, 315);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 30);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            this.AddAdditionalInfo_btn.Location = new System.Drawing.Point(258, 343);
+            this.AddAdditionalInfo_btn.Name = "AddAdditionalInfo_btn";
+            this.AddAdditionalInfo_btn.Size = new System.Drawing.Size(75, 30);
+            this.AddAdditionalInfo_btn.TabIndex = 14;
+            this.AddAdditionalInfo_btn.Text = "Додати";
+            this.AddAdditionalInfo_btn.UseVisualStyleBackColor = true;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(99, 142);
+            this.textBox8.Location = new System.Drawing.Point(110, 142);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(234, 20);
+            this.textBox8.Size = new System.Drawing.Size(224, 20);
             this.textBox8.TabIndex = 13;
             // 
             // label8
@@ -325,25 +330,25 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(27, 145);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 13);
+            this.label8.Size = new System.Drawing.Size(77, 13);
             this.label8.TabIndex = 12;
-            this.label8.Text = "Specialty";
+            this.label8.Text = "Спеціальність";
             // 
-            // textBox10
+            // ProgressAddField
             // 
-            this.textBox10.Location = new System.Drawing.Point(99, 29);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(234, 20);
-            this.textBox10.TabIndex = 9;
+            this.ProgressAddField.Location = new System.Drawing.Point(99, 29);
+            this.ProgressAddField.Name = "ProgressAddField";
+            this.ProgressAddField.Size = new System.Drawing.Size(234, 20);
+            this.ProgressAddField.TabIndex = 9;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(27, 32);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 13);
+            this.label10.Size = new System.Drawing.Size(64, 13);
             this.label10.TabIndex = 8;
-            this.label10.Text = "GPA";
+            this.label10.Text = "Сер. оцінка";
             // 
             // textBox11
             // 
@@ -352,30 +357,46 @@
             this.textBox11.Size = new System.Drawing.Size(234, 20);
             this.textBox11.TabIndex = 7;
             // 
-            // label11
+            // Address
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(27, 71);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(39, 13);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Adress";
+            this.Address.AutoSize = true;
+            this.Address.Location = new System.Drawing.Point(27, 71);
+            this.Address.Name = "Address";
+            this.Address.Size = new System.Drawing.Size(44, 13);
+            this.Address.TabIndex = 6;
+            this.Address.Text = "Адреса";
             // 
-            // textBox12
+            // AddressAddField
             // 
-            this.textBox12.Location = new System.Drawing.Point(99, 68);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(234, 20);
-            this.textBox12.TabIndex = 5;
+            this.AddressAddField.Location = new System.Drawing.Point(99, 68);
+            this.AddressAddField.Name = "AddressAddField";
+            this.AddressAddField.Size = new System.Drawing.Size(234, 20);
+            this.AddressAddField.TabIndex = 5;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(27, 108);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 13);
+            this.label12.Size = new System.Drawing.Size(59, 13);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Mother";
+            this.label12.Text = "Матір ФІБ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(99, 252);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(234, 20);
+            this.textBox1.TabIndex = 22;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 255);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Близькі Род.";
             // 
             // AddStudentPanel
             // 
@@ -407,20 +428,20 @@
         private System.Windows.Forms.TextBox MobTelField;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button AddAdditionalInfo_btn;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox ProgressAddField;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label Address;
+        private System.Windows.Forms.TextBox AddressAddField;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox NumbRecBookAddField;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox PhnesRelatonsAddFielad;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox FatherSpecAddField;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label13;
@@ -429,5 +450,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox SexField;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

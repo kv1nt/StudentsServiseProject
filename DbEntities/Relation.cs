@@ -8,5 +8,7 @@ namespace DbEntities
         [MaxLength(250)]
         [Required]
         public string Name { get; set; }
+
+       
     }
 }

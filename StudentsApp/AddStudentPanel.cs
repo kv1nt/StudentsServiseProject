@@ -45,18 +45,23 @@ namespace StudentsApp
         }
 
         private void AddMainInfo_btn_Click(object sender, EventArgs e) // Add main info student
-        {            
-          /*  try
+        { 
+           /*            
+            try
             {
                 using (StudentsServiceAppClient client = new StudentsServiceAppClient()) 
                 {
-                    Phone phone = new Phone();
-                    
+
+                    Phone    
+                     .Include(p => p.ProductSpecifications.Select(ps => ps.Specification))
+                     .SingleOrDefault(x => x.Id == id);
+
                     client.AddNewStudent(NameField.Text, LastNameField.Text, SexField.Text, Convert.ToInt32(NumbRecBookAddField.Text.Trim()), AgeField.Text.Trim(),
-                                         Convert.ToInt32(DateOfBirthField.Text.Trim()), MobTelField.Text);
+                                         Convert.ToInt32(DateOfBirthField.Text.Trim()), phone);
                     client.Close();
-                }               
-                string message = "Student is added";
+                }
+                
+                string message = "Student is added"; 
                 string caption = "Add student";
                 MessageBoxButtons button = MessageBoxButtons.OK;
                 MessageBox.Show(message, caption, button);
@@ -68,8 +73,13 @@ namespace StudentsApp
                 MessageBoxButtons button = MessageBoxButtons.OK;
                 MessageBox.Show(message, caption, button);
             }
-            
+          */ 
         }
-        */
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
+    
 }
