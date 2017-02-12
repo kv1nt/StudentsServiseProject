@@ -94,6 +94,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="UpdateStudetInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateStudetInfo.Designer.cs">
+      <DependentUpon>UpdateStudetInfo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddStudentPanel.resx">
       <DependentUpon>AddStudentPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +124,9 @@
     </Compile>
     <EmbeddedResource Include="RemoveStudPanel.resx">
       <DependentUpon>RemoveStudPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStudetInfo.resx">
+      <DependentUpon>UpdateStudetInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

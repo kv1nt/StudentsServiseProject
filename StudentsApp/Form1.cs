@@ -88,6 +88,18 @@ namespace StudentsApp
             }
         }
 
-      
+        private void edit_btn_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(UpdateStudetInfo.updateStudent))
+            {
+                panel.Controls.Add(UpdateStudetInfo.updateStudent);
+                UpdateStudetInfo.updateStudent.Dock = DockStyle.Fill;
+                UpdateStudetInfo.updateStudent.BringToFront();
+            }
+            else
+            {
+                UpdateStudetInfo.updateStudent.BringToFront();
+            }
+        }
     }
 }

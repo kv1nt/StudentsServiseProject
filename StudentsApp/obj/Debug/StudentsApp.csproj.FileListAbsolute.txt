@@ -15,3 +15,4 @@ C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\EntityFramework.xml
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.UpdateStudetInfo.resources

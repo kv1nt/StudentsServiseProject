@@ -85,7 +85,7 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.closeToolStripMenuItem.Text = "Вихід";
             // 
             // toolsToolStripMenuItem
@@ -167,6 +167,7 @@
             this.edit_btn.Size = new System.Drawing.Size(38, 34);
             this.edit_btn.TabIndex = 7;
             this.edit_btn.UseVisualStyleBackColor = false;
+            this.edit_btn.Click += new System.EventHandler(this.edit_btn_Click);
             // 
             // about_btn
             // 
