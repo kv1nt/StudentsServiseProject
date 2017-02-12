@@ -47,6 +47,8 @@
             this.NumbRecBookAddField = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.PhnesRelatonsAddFielad = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.FatherSpecAddField = new System.Windows.Forms.TextBox();
@@ -62,8 +64,6 @@
             this.Address = new System.Windows.Forms.Label();
             this.AddressAddField = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -128,7 +128,7 @@
             // 
             // AddMainInfo_btn
             // 
-            this.AddMainInfo_btn.Location = new System.Drawing.Point(252, 303);
+            this.AddMainInfo_btn.Location = new System.Drawing.Point(252, 334);
             this.AddMainInfo_btn.Name = "AddMainInfo_btn";
             this.AddMainInfo_btn.Size = new System.Drawing.Size(75, 30);
             this.AddMainInfo_btn.TabIndex = 15;
@@ -253,13 +253,29 @@
             this.groupBox2.Controls.Add(this.Address);
             this.groupBox2.Controls.Add(this.AddressAddField);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Location = new System.Drawing.Point(664, 23);
+            this.groupBox2.Location = new System.Drawing.Point(654, 23);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(378, 392);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Введіть додаткову інформацію";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(99, 252);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(234, 20);
+            this.textBox1.TabIndex = 22;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 255);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Близькі Род.";
             // 
             // PhnesRelatonsAddFielad
             // 
@@ -381,22 +397,6 @@
             this.label12.Size = new System.Drawing.Size(59, 13);
             this.label12.TabIndex = 4;
             this.label12.Text = "Матір ФІБ";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(99, 252);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 20);
-            this.textBox1.TabIndex = 22;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 255);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Близькі Род.";
             // 
             // AddStudentPanel
             // 
