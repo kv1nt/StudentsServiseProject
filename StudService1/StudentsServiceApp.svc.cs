@@ -20,7 +20,7 @@ namespace StudService1
         }
 
         public void AddNewStudent(string firstName, string lastName, string surname, int numbRecBook,
-                                   string sex, int age, DateTime birthDateStud, Phone phone)
+                                   string sex, int age, DateTime birthDateStud)
 
 
         {
@@ -34,8 +34,8 @@ namespace StudService1
                     NumberRecordBook = numbRecBook,
                     Sex = sex,
                     Age = age,
-                    Birthdate = birthDateStud,
-                    StudentPhones = phone
+                    Birthdate = birthDateStud
+         
                 };
 
                 context.StudentInfos.Add(newStudentInfo);

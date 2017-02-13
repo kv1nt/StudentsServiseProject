@@ -51,15 +51,20 @@ namespace StudentsApp
             {
                 using (StudentsServiceAppClient client = new StudentsServiceAppClient()) 
                 {
+                    /*
+                     Phone phone = new Phone(MobTelField.text);
+                    phone.MobTelField.Text;
+                   
+                    string datetime;
+                    datetime = Convert.ToString(DateOfBirthField.Text);
+                     */
+                    client.AddNewStudent(NameField.Text, LastNameField.Text, surnameAddField.Text, Convert.ToInt32(NumbRecBookAddField.Text.Trim()), SexField.Text,
+                        Convert.ToInt32(AgeField.Text.Trim()), DateTime.Parse(DateOfBirthField.Text));
 
-                    /*  Phone    
-                       .Include(p => p.ProductSpecifications.Select(ps => ps.Specification))
-                       .SingleOrDefault(x => x.Id == id);
 
-                      client.AddNewStudent(NameField.Text, LastNameField.Text, SexField.Text, Convert.ToInt32(NumbRecBookAddField.Text.Trim()), AgeField.Text.Trim(),
-                                           Convert.ToInt32(DateOfBirthField.Text.Trim()), phone);
-                      client.Close();
-                       */
+
+                    client.Close();
+                      
                 }
 
                 string message = "Student is added"; 

@@ -6,6 +6,6 @@ namespace DbEntities
     {
         
         [Required]
-        public string PhoneNumber { get; set; }
+        public int PhoneNumber { get; set; }
     }
 }

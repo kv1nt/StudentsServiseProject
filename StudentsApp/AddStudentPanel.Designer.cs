@@ -40,7 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.DateOfBirthField = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.surnameAddField = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.NameField = new System.Windows.Forms.TextBox();
             this.NameFieldAdd = new System.Windows.Forms.Label();
@@ -81,7 +81,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.DateOfBirthField);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.surnameAddField);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.NameField);
             this.groupBox1.Controls.Add(this.NameFieldAdd);
@@ -185,13 +185,13 @@
             this.label4.Text = "По батькові";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox3
+            // surnameAddField
             // 
-            this.textBox3.Location = new System.Drawing.Point(93, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 20);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.surnameAddField.Location = new System.Drawing.Point(93, 102);
+            this.surnameAddField.Name = "surnameAddField";
+            this.surnameAddField.Size = new System.Drawing.Size(234, 20);
+            this.surnameAddField.TabIndex = 5;
+            this.surnameAddField.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -421,7 +421,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox DateOfBirthField;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox surnameAddField;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox NameField;
         private System.Windows.Forms.Label NameFieldAdd;
