@@ -11,6 +11,16 @@ namespace StudService1
 {
     public class StudentsServiceApp : IStudentsServiceApp
     {
+        public void AddNewStudent(StudentInfo student)
+        {
+            using (StudentsDbContext context = new StudentsDbContext())
+            {
+                context.StudentInfos.Add(student);
+                context.SaveChanges();
+
+            }
+        }
+
         public List<StudentInfo> StudetsInfoList()
         {
             using (StudentsDbContext context = new StudentsDbContext())
@@ -18,32 +28,7 @@ namespace StudService1
                 return context.StudentInfos.ToList();
             }
         }
-
-        public void AddNewStudent(string firstName, string lastName, string surname, int numbRecBook,
-                                   string sex, int age, DateTime birthDateStud)
-
-
-        {
-            using (StudentsDbContext context = new StudentsDbContext())
-            {
-                StudentInfo newStudentInfo = new StudentInfo
-                {
-                    FirstName = firstName,
-                    LastName = lastName,
-                    Surname = surname,
-                    NumberRecordBook = numbRecBook,
-                    Sex = sex,
-                    Age = age,
-                    Birthdate = birthDateStud
-         
-                };
-
-                context.StudentInfos.Add(newStudentInfo);
-                context.SaveChanges();
-            }
-        }
-
-       
+             
     }
 }
 

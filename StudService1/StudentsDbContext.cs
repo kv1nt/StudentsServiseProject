@@ -15,6 +15,15 @@ namespace StudService1
             
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<StudentInfo>().HasMany(x => x.StudentPhones);
+            modelBuilder.Entity<ParentsInfo>().HasMany(x => x.Phones);
+            modelBuilder.Entity<StudentInfo>().HasMany(x => x.ParentsInfo);
+
+            base.OnModelCreating(modelBuilder);
+        }
+
         public DbSet<StudentInfo> StudentInfos { get; set; }    //Tables
         public DbSet<ParentsInfo> ParentsInfos { get; set; }
         public DbSet<Phone> Phones { get; set; }
@@ -22,6 +31,6 @@ namespace StudService1
         public DbSet<Group> Groups { get; set; }
         public DbSet<StudentProgress> StudentsProgresses { get; set; }
         public DbSet<Relation> Relations { get; set; }
-     
+        public object StudentInfo { get; set; }
     }
 }

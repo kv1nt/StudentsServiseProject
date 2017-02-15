@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DbEntities;
 using StudentsApp.StudentService2;
-
+using StudService1;
 
 namespace StudentsApp
 {
@@ -17,7 +18,7 @@ namespace StudentsApp
     {
         private static AddStudentPanel studListView;
 
-        
+
 
         public static AddStudentPanel addStudent
         {
@@ -34,6 +35,7 @@ namespace StudentsApp
             InitializeComponent();
         }
 
+
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -45,29 +47,43 @@ namespace StudentsApp
         }
 
         private void AddMainInfo_btn_Click(object sender, EventArgs e) // Add main info student
-        { 
-                      
+        {
+
             try
             {
-                using (StudentsServiceAppClient client = new StudentsServiceAppClient()) 
+                using (StudentsServiceAppClient client = new StudentsServiceAppClient())
                 {
-                    /*
-                     Phone phone = new Phone(MobTelField.text);
-                    phone.MobTelField.Text;
-                   
-                    string datetime;
-                    datetime = Convert.ToString(DateOfBirthField.Text);
-                     */
-                    client.AddNewStudent(NameField.Text, LastNameField.Text, surnameAddField.Text, Convert.ToInt32(NumbRecBookAddField.Text.Trim()), SexField.Text,
-                        Convert.ToInt32(AgeField.Text.Trim()), DateTime.Parse(DateOfBirthField.Text));
 
+                    Phone phone = new Phone();
 
+                    StudentInfo newStudentInfo = new StudentInfo
+                    {
+                        FirstName = NameField.Text,
+                        LastName = LastNameField.Text,
+                        Surname = surnameAddField.Text,
+                        NumberRecordBook = Convert.ToInt32(NumbRecBookAddField.Text.Trim()),
+                        Sex = SexField.Text,
+                        Age = Convert.ToInt32(AgeField.Text),
+                        Birthdate = DateTime.Parse(DateOfBirthField.Text)
+                    };
 
+                    //client.StudetsInfoList();
+                    client.AddNewStudent(newStudentInfo);
+
+                    // context.StudentInfos.Add(newStudentInfo);
+                    //context.SaveChanges();
                     client.Close();
-                      
                 }
 
-                string message = "Student is added"; 
+
+
+
+
+
+
+
+
+                string message = "Student is added";
                 string caption = "Add student";
                 MessageBoxButtons button = MessageBoxButtons.OK;
                 MessageBox.Show(message, caption, button);
@@ -79,7 +95,7 @@ namespace StudentsApp
                 MessageBoxButtons button = MessageBoxButtons.OK;
                 MessageBox.Show(message, caption, button);
             }
-           
+
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -87,5 +103,5 @@ namespace StudentsApp
 
         }
     }
-    
+
 }

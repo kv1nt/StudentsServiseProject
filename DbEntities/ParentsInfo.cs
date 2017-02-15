@@ -5,6 +5,10 @@ namespace DbEntities
 {
     public class ParentsInfo : IdEntity
     {
+        public ParentsInfo()
+        {
+            Phones = new List<Phone>();
+        }
         [MaxLength(250)]
         [Required]
         public string FirstName { get; set; }

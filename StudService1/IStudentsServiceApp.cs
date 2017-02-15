@@ -12,9 +12,10 @@ namespace StudService1
     [ServiceContract]
     public interface IStudentsServiceApp
     {
+      
         [OperationContract]
-        void AddNewStudent(string firstName, string lastName, string surname,
-                            int numbRecBook, string sex, int age,  DateTime birthDateStud);
+        void AddNewStudent(StudentInfo student);
+
         [OperationContract]
         List<StudentInfo> StudetsInfoList();
     }

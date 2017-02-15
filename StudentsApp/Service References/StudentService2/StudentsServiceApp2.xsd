@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/StudService1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/StudService1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:complexType name="ArrayOfStudentInfo">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudentInfo" nillable="true" type="tns:StudentInfo" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfStudentInfo" nillable="true" type="tns:ArrayOfStudentInfo" />
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DbEntities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DbEntities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexType name="StudentInfo">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:IdEntity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Adress" nillable="true" type="tns:Adress" />
-          <xs:element minOccurs="0" name="Age" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Age" type="xs:int" />
           <xs:element minOccurs="0" name="Birthdate" type="xs:dateTime" />
           <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Group" nillable="true" type="tns:Group" />
           <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="NumberRecordBook" type="xs:int" />
-          <xs:element minOccurs="0" name="ParentsInfo" nillable="true" type="tns:ParentsInfo" />
+          <xs:element minOccurs="0" name="ParentsInfo" nillable="true" type="tns:ArrayOfParentsInfo" />
           <xs:element minOccurs="0" name="Sex" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="StudentPhone" nillable="true" type="tns:Phone" />
+          <xs:element minOccurs="0" name="StudentPhones" nillable="true" type="tns:ArrayOfPhone" />
           <xs:element minOccurs="0" name="StudentProgress" nillable="true" type="tns:StudentProgress" />
           <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
         </xs:sequence>
@@ -37,7 +31,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:IdEntity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="IdAdress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -53,28 +47,37 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="Group" nillable="true" type="tns:Group" />
+  <xs:complexType name="ArrayOfParentsInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParentsInfo" nillable="true" type="tns:ParentsInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfParentsInfo" nillable="true" type="tns:ArrayOfParentsInfo" />
   <xs:complexType name="ParentsInfo">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:IdEntity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="FatherFirstName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="FatherSecondName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="FatherWorkPlace" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="MotherFirstName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="MotherSecondName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="MotherWorkPlace" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Phone" nillable="true" type="tns:Phone" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phones" nillable="true" type="tns:ArrayOfPhone" />
           <xs:element minOccurs="0" name="Relation" nillable="true" type="tns:Relation" />
+          <xs:element minOccurs="0" name="WorkPlace" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="ParentsInfo" nillable="true" type="tns:ParentsInfo" />
+  <xs:complexType name="ArrayOfPhone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Phone" nillable="true" type="tns:Phone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPhone" nillable="true" type="tns:ArrayOfPhone" />
   <xs:complexType name="Phone">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:IdEntity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="IdPhone" type="xs:int" />
+          <xs:element minOccurs="0" name="PhoneNumber" type="xs:int" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -84,21 +87,12 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:IdEntity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Phones" nillable="true" type="tns:ArrayOfPhone" />
-          <xs:element minOccurs="0" name="SecondName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="WorkPlace" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="Relation" nillable="true" type="tns:Relation" />
-  <xs:complexType name="ArrayOfPhone">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Phone" nillable="true" type="tns:Phone" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfPhone" nillable="true" type="tns:ArrayOfPhone" />
   <xs:complexType name="StudentProgress">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:IdEntity">
@@ -109,4 +103,10 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="StudentProgress" nillable="true" type="tns:StudentProgress" />
+  <xs:complexType name="ArrayOfStudentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudentInfo" nillable="true" type="tns:StudentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudentInfo" nillable="true" type="tns:ArrayOfStudentInfo" />
 </xs:schema>

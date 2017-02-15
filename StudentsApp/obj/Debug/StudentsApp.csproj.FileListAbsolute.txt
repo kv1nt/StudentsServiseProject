@@ -16,3 +16,8 @@ C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\EntityFramework.xml
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.UpdateStudetInfo.resources
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\ApplicationInsights.config
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\DbEntities.dll
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\StudService1.dll
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\DbEntities.pdb
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\StudService1.pdb

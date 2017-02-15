@@ -129,6 +129,7 @@
       <DependentUpon>UpdateStudetInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DbEntities.StudentInfo.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,9 +139,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\StudentService2\StudentsApp.StudentService2.StudentInfo.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Service References\StudentService2\StudentsServiceApp.wsdl" />
     <None Include="Service References\StudentService2\StudentsServiceApp.xsd">
       <SubType>Designer</SubType>
@@ -202,6 +200,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\info2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DbEntities\DbEntities.csproj">
+      <Project>{005E03BF-84D6-4639-8EB6-5902FBD48A17}</Project>
+      <Name>DbEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudService1\StudService1.csproj">
+      <Project>{EAFC02D7-C89D-4ED7-A2CB-D9EF195173D7}</Project>
+      <Name>StudService1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
