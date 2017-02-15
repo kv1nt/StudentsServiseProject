@@ -21,6 +21,16 @@ namespace StudService1
             }
         }
 
+        public void AddAdditionalInfo(StudentInfo student)
+        {
+            using (StudentsDbContext context = new StudentsDbContext())
+            {
+                context.StudentInfos.Add(student);
+                context.SaveChanges();
+
+            }
+        }
+
         public List<StudentInfo> StudetsInfoList()
         {
             using (StudentsDbContext context = new StudentsDbContext())

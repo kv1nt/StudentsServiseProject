@@ -53,8 +53,10 @@ namespace StudentsApp
             {
                 using (StudentsServiceAppClient client = new StudentsServiceAppClient())
                 {
-
-                    Phone phone = new Phone();
+                    Phone newPhone = new Phone();
+                    newPhone.PhoneNumber = Convert.ToInt32(MobTelField.Text);        
+                    List<Phone> phone = new List<Phone>();
+                    phone.Add(newPhone);
 
                     StudentInfo newStudentInfo = new StudentInfo
                     {
@@ -64,24 +66,12 @@ namespace StudentsApp
                         NumberRecordBook = Convert.ToInt32(NumbRecBookAddField.Text.Trim()),
                         Sex = SexField.Text,
                         Age = Convert.ToInt32(AgeField.Text),
-                        Birthdate = DateTime.Parse(DateOfBirthField.Text)
-                    };
-
-                    //client.StudetsInfoList();
+                        Birthdate = DateTime.Parse(DateOfBirthField.Text),
+                        StudentPhones = phone
+                    }; 
                     client.AddNewStudent(newStudentInfo);
-
-                    // context.StudentInfos.Add(newStudentInfo);
-                    //context.SaveChanges();
                     client.Close();
                 }
-
-
-
-
-
-
-
-
 
                 string message = "Student is added";
                 string caption = "Add student";

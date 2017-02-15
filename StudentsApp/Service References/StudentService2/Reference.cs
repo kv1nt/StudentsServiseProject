@@ -26,6 +26,12 @@ namespace StudentsApp.StudentService2 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/StudetsInfoList", ReplyAction="http://tempuri.org/IStudentsServiceApp/StudetsInfoListResponse")]
         System.Threading.Tasks.Task<DbEntities.StudentInfo[]> StudetsInfoListAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/AddAdditionalInfo", ReplyAction="http://tempuri.org/IStudentsServiceApp/AddAdditionalInfoResponse")]
+        void AddAdditionalInfo(DbEntities.StudentInfo student);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/AddAdditionalInfo", ReplyAction="http://tempuri.org/IStudentsServiceApp/AddAdditionalInfoResponse")]
+        System.Threading.Tasks.Task AddAdditionalInfoAsync(DbEntities.StudentInfo student);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,6 +75,14 @@ namespace StudentsApp.StudentService2 {
         
         public System.Threading.Tasks.Task<DbEntities.StudentInfo[]> StudetsInfoListAsync() {
             return base.Channel.StudetsInfoListAsync();
+        }
+        
+        public void AddAdditionalInfo(DbEntities.StudentInfo student) {
+            base.Channel.AddAdditionalInfo(student);
+        }
+        
+        public System.Threading.Tasks.Task AddAdditionalInfoAsync(DbEntities.StudentInfo student) {
+            return base.Channel.AddAdditionalInfoAsync(student);
         }
     }
 }

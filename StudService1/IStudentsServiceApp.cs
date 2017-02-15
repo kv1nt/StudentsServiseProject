@@ -14,9 +14,11 @@ namespace StudService1
     {
       
         [OperationContract]
-        void AddNewStudent(StudentInfo student);
+        void AddNewStudent(StudentInfo student); // Add main info
 
         [OperationContract]
         List<StudentInfo> StudetsInfoList();
+        [OperationContract]
+        void AddAdditionalInfo(StudentInfo student); //Add additional info student
     }
 }
