@@ -4,7 +4,10 @@ namespace DbEntities
 {
     public class StudentProgress: IdEntity
     {
-        [Required]
+       
+       [Required]
         public float Progress { get; set; }
+
+       
     }
 }

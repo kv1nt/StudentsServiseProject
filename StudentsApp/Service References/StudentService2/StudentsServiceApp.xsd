@@ -25,16 +25,4 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="AddAdditionalInfo">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="student" nillable="true" type="q3:StudentInfo" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="AddAdditionalInfoResponse">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
 </xs:schema>

@@ -54,27 +54,40 @@ namespace StudentsApp
                 using (StudentsServiceAppClient client = new StudentsServiceAppClient())
                 {
                     Phone newPhone = new Phone();
-                    newPhone.PhoneNumber = Convert.ToInt32(MobTelField.Text);        
+                    newPhone.PhoneNumber = Convert.ToInt32(MobTelField.Text); 
+                           
                     List<Phone> phone = new List<Phone>();
                     phone.Add(newPhone);
+
+                    StudentProgress newProgress = new StudentProgress();
+                    newProgress.Progress = float.Parse(ProgressAddField.Text);
+
+                    Adress newAdress = new Adress();
+                    newAdress.Address = AddressAddField.Text;
+
+                    Group newGroup = new Group();
+                    newGroup.Speciality = GroupAddField.Text;
 
                     StudentInfo newStudentInfo = new StudentInfo
                     {
                         FirstName = NameField.Text,
                         LastName = LastNameField.Text,
                         Surname = surnameAddField.Text,
-                        NumberRecordBook = Convert.ToInt32(NumbRecBookAddField.Text.Trim()),
+                        NumberRecordBook = Convert.ToInt32(NumbRecBookAddField.Text),
                         Sex = SexField.Text,
                         Age = Convert.ToInt32(AgeField.Text),
                         Birthdate = DateTime.Parse(DateOfBirthField.Text),
-                        StudentPhones = phone
+                        StudentPhones = phone,
+                        StudentProgress = newProgress,
+                        Adress = newAdress,
+                        Group = newGroup
                     }; 
                     client.AddNewStudent(newStudentInfo);
                     client.Close();
                 }
 
-                string message = "Student is added";
-                string caption = "Add student";
+                string message = "Студент був доданий";
+                string caption = "Додання студента до БД";
                 MessageBoxButtons button = MessageBoxButtons.OK;
                 MessageBox.Show(message, caption, button);
             }
@@ -92,6 +105,9 @@ namespace StudentsApp
         {
 
         }
+
+       
+        
     }
 
 }

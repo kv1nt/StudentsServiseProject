@@ -55,15 +55,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.AddAdditionalInfo_btn = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.ProgressAddField = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.MotherInfoField = new System.Windows.Forms.TextBox();
             this.Address = new System.Windows.Forms.Label();
             this.AddressAddField = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.GroupAddField = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -236,6 +237,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.GroupAddField);
+            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.PhnesRelatonsAddFielad);
@@ -244,12 +247,11 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.textBox13);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.AddAdditionalInfo_btn);
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.ProgressAddField);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox11);
+            this.groupBox2.Controls.Add(this.MotherInfoField);
             this.groupBox2.Controls.Add(this.Address);
             this.groupBox2.Controls.Add(this.AddressAddField);
             this.groupBox2.Controls.Add(this.label12);
@@ -325,15 +327,6 @@
             this.label13.TabIndex = 15;
             this.label13.Text = "Батько ФІБ";
             // 
-            // AddAdditionalInfo_btn
-            // 
-            this.AddAdditionalInfo_btn.Location = new System.Drawing.Point(258, 343);
-            this.AddAdditionalInfo_btn.Name = "AddAdditionalInfo_btn";
-            this.AddAdditionalInfo_btn.Size = new System.Drawing.Size(75, 30);
-            this.AddAdditionalInfo_btn.TabIndex = 14;
-            this.AddAdditionalInfo_btn.Text = "Додати";
-            this.AddAdditionalInfo_btn.UseVisualStyleBackColor = true;
-            // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(110, 142);
@@ -366,12 +359,12 @@
             this.label10.TabIndex = 8;
             this.label10.Text = "Сер. оцінка";
             // 
-            // textBox11
+            // MotherInfoField
             // 
-            this.textBox11.Location = new System.Drawing.Point(99, 105);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(234, 20);
-            this.textBox11.TabIndex = 7;
+            this.MotherInfoField.Location = new System.Drawing.Point(99, 105);
+            this.MotherInfoField.Name = "MotherInfoField";
+            this.MotherInfoField.Size = new System.Drawing.Size(234, 20);
+            this.MotherInfoField.TabIndex = 7;
             // 
             // Address
             // 
@@ -397,6 +390,22 @@
             this.label12.Size = new System.Drawing.Size(59, 13);
             this.label12.TabIndex = 4;
             this.label12.Text = "Матір ФІБ";
+            // 
+            // GroupAddField
+            // 
+            this.GroupAddField.Location = new System.Drawing.Point(102, 316);
+            this.GroupAddField.Name = "GroupAddField";
+            this.GroupAddField.Size = new System.Drawing.Size(234, 20);
+            this.GroupAddField.TabIndex = 24;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(30, 319);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Група";
             // 
             // AddStudentPanel
             // 
@@ -428,12 +437,11 @@
         private System.Windows.Forms.TextBox MobTelField;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button AddAdditionalInfo_btn;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox ProgressAddField;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox MotherInfoField;
         private System.Windows.Forms.Label Address;
         private System.Windows.Forms.TextBox AddressAddField;
         private System.Windows.Forms.Label label12;
@@ -452,5 +460,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox GroupAddField;
+        private System.Windows.Forms.Label label11;
     }
 }
