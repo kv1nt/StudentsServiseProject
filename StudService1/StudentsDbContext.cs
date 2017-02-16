@@ -12,7 +12,7 @@ namespace StudService1
     {
         public StudentsDbContext() : base("connectToDb")
         {
-            
+            this.Configuration.ProxyCreationEnabled = false;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

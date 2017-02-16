@@ -35,11 +35,7 @@ namespace StudentsApp
             InitializeComponent();
         }
 
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
@@ -68,6 +64,35 @@ namespace StudentsApp
                     Group newGroup = new Group();
                     newGroup.Speciality = GroupAddField.Text;
 
+
+                    Phone newParentsPhone = new Phone();
+                    newParentsPhone.PhoneNumber = Convert.ToInt32(PhonesRelatonsAddFielad.Text);
+
+                    List<Phone> RelationsPhones = new List<Phone>();
+                    RelationsPhones.Add(newParentsPhone);
+
+                    ParentsInfo newMotheInfo = new ParentsInfo();
+                    //newMotheInfo.Relation = (Relation)cbRelations.SelectedItems[0];
+                    ParentsInfo newFatherInfo = new ParentsInfo();
+                   // ParentsInfo newRelationInfo = new ParentsInfo();
+                   // newRelationInfo.Relation = new Relation { Name = RelationField.Text };
+
+                    newMotheInfo.FirstName = MotherNameField.Text;
+                    newMotheInfo.LastName = MotherLastNameField.Text;
+                    newMotheInfo.WorkPlace = MotherWorkPlace.Text;
+                    newMotheInfo.Phones = RelationsPhones;
+                    newFatherInfo.FirstName = FatherNameField.Text;
+                    newFatherInfo.LastName = FatherLastNameField.Text;
+                    newFatherInfo.WorkPlace = FatherWorkPlaseField.Text;
+                    newFatherInfo.Phones = RelationsPhones;
+                  
+                    List<ParentsInfo> parents = new List<ParentsInfo>();
+                    parents.Add(newMotheInfo);
+                    parents.Add(newFatherInfo);
+                    //parents.Add(newRelationInfo);
+                    
+                   
+
                     StudentInfo newStudentInfo = new StudentInfo
                     {
                         FirstName = NameField.Text,
@@ -80,7 +105,9 @@ namespace StudentsApp
                         StudentPhones = phone,
                         StudentProgress = newProgress,
                         Adress = newAdress,
-                        Group = newGroup
+                        Group = newGroup,
+                        ParentsInfo = parents,                        
+
                     }; 
                     client.AddNewStudent(newStudentInfo);
                     client.Close();
@@ -94,7 +121,7 @@ namespace StudentsApp
             catch (Exception ex)
             {
                 string message = ex.Message;
-                string caption = "Error!";
+                string caption = "Помилка!";
                 MessageBoxButtons button = MessageBoxButtons.OK;
                 MessageBox.Show(message, caption, button);
             }
@@ -106,8 +133,10 @@ namespace StudentsApp
 
         }
 
-       
-        
+        private void AddStudentPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

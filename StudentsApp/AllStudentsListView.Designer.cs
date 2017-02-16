@@ -53,10 +53,11 @@
             this.listViewAllStud.GridLines = true;
             this.listViewAllStud.Location = new System.Drawing.Point(3, 3);
             this.listViewAllStud.Name = "listViewAllStud";
-            this.listViewAllStud.Size = new System.Drawing.Size(1165, 451);
+            this.listViewAllStud.Size = new System.Drawing.Size(1142, 451);
             this.listViewAllStud.TabIndex = 0;
             this.listViewAllStud.UseCompatibleStateImageBehavior = false;
             this.listViewAllStud.View = System.Windows.Forms.View.Details;
+            this.listViewAllStud.SelectedIndexChanged += new System.EventHandler(this.listViewAllStud_SelectedIndexChanged);
             // 
             // id_col
             // 
@@ -106,6 +107,7 @@
             this.Location = new System.Drawing.Point(13, 13);
             this.Name = "panelAllStud";
             this.Size = new System.Drawing.Size(1168, 451);
+            this.Load += new System.EventHandler(this.panelAllStud_Load);
             this.ResumeLayout(false);
 
         }

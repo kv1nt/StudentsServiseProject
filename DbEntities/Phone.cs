@@ -7,5 +7,14 @@ namespace DbEntities
         
         [Required]
         public int PhoneNumber { get; set; }
+
+        public Phone Copy()
+        {
+            return new Phone
+            {
+                PhoneNumber = this.PhoneNumber,
+                Id = this.Id
+            };
+        }
     }
 }

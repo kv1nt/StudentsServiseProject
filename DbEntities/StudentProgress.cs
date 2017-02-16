@@ -8,6 +8,13 @@ namespace DbEntities
        [Required]
         public float Progress { get; set; }
 
-       
+        public StudentProgress Copy()
+        {
+            return new StudentProgress
+            {
+                Progress = this.Progress,
+                Id = this.Id
+            };
+        }
     }
 }

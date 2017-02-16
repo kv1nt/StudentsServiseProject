@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentsApp.StudentService2;
+using DbEntities;
 
 namespace StudentsApp
 {
@@ -30,10 +31,10 @@ namespace StudentsApp
 
         }
 
-        StudentsServiceAppClient client = new StudentsServiceAppClient();
        
         private void buttonShowAllStud_Click(object sender, EventArgs e)
         {
+
             if (!panel.Controls.Contains(panelAllStud.showAllStud))
             {
                 panel.Controls.Add(panelAllStud.showAllStud);
@@ -44,6 +45,7 @@ namespace StudentsApp
             {
                 panelAllStud.showAllStud.BringToFront();
             }
+            
         }
 
         private void findStudent_btn_Click(object sender, EventArgs e)

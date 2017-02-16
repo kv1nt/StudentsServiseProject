@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -21,13 +22,11 @@ namespace StudService1
             }
         }
 
-       
-
         public List<StudentInfo> StudetsInfoList()
         {
             using (StudentsDbContext context = new StudentsDbContext())
             {
-                return context.StudentInfos.ToList();
+                return context.StudentInfos.ToList().Select(x => x.Copy()).ToList();
             }
         }
              

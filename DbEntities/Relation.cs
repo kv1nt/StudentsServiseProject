@@ -9,6 +9,14 @@ namespace DbEntities
         [Required]
         public string Name { get; set; }
 
+        public Relation Copy()
+        {
+            return new Relation
+            {
+                Name = this.Name,
+                Id = this.Id
+            };
+        }
        
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace DbEntities
 {
@@ -19,5 +20,18 @@ namespace DbEntities
 
         public virtual Relation Relation { get; set; }
         public virtual  ICollection<Phone> Phones { get; set; }
+
+        public ParentsInfo Copy()
+        {
+            return new ParentsInfo
+            {
+                Relation = this.Relation.Copy(),
+                LastName = this.LastName,
+                FirstName = this.FirstName,
+                Phones = this.Phones?.Select(x => x.Copy()).ToList(),
+                WorkPlace = this.WorkPlace,
+                Id = this.Id
+            };
+        }
 }
 }

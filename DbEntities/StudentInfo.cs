@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace DbEntities
 {
@@ -21,7 +22,7 @@ namespace DbEntities
         [Required]
         public string Surname { get; set; }
         [Required]
-        public int NumberRecordBook { get; set; }       
+        public int NumberRecordBook { get; set; }
         [Required]
         public int Age { get; set; }
         [MaxLength(250)]
@@ -35,5 +36,25 @@ namespace DbEntities
         public virtual Adress Adress { get; set; }
         public virtual Group Group { get; set; }
         public virtual StudentProgress StudentProgress { get; set; }
+
+        public StudentInfo Copy()
+        {
+            return new StudentInfo
+            {
+                Age = this.Age,
+                Birthdate = this.Birthdate,
+                FirstName = this.FirstName,
+                LastName = this.LastName,
+                Adress = this.Adress?.Copy(),
+                Group = this.Group?.Copy(),
+                NumberRecordBook = this.NumberRecordBook,
+                Sex = this.Sex,
+                Surname = this.Surname,
+                Id = this.Id,
+                StudentProgress = this.StudentProgress?.Copy(),
+                StudentPhones = this.StudentPhones.Select(x => x.Copy()).ToList(),
+                ParentsInfo = this.ParentsInfo.Select(x => x.Copy()).ToList()
+            };
+        }
     }
 }
