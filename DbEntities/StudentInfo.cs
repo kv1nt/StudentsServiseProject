@@ -9,7 +9,7 @@ namespace DbEntities
     {
         public StudentInfo()
         {
-            StudentPhones = new List<Phone>();
+           // StudentPhones = new List<Phone>();
             ParentsInfo = new List<ParentsInfo>();
         }
         [MaxLength(250)]
@@ -31,7 +31,7 @@ namespace DbEntities
         [Required]
         public DateTime Birthdate { get; set; }
 
-        public virtual ICollection<Phone> StudentPhones { get; set; }
+        public virtual string StudentPhones { get; set; }
         public virtual ICollection<ParentsInfo> ParentsInfo { get; set; }
         public virtual Adress Adress { get; set; }
         public virtual Group Group { get; set; }

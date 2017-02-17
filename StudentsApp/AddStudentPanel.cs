@@ -50,7 +50,7 @@ namespace StudentsApp
                 using (StudentsServiceAppClient client = new StudentsServiceAppClient())
                 {
                     Phone newPhone = new Phone();
-                    newPhone.PhoneNumber = Convert.ToInt32(MobTelField.Text); 
+                    newPhone.PhoneNumber = MobTelField.Text; 
                            
                     List<Phone> phone = new List<Phone>();
                     phone.Add(newPhone);
@@ -66,7 +66,7 @@ namespace StudentsApp
 
 
                     Phone newParentsPhone = new Phone();
-                    newParentsPhone.PhoneNumber = Convert.ToInt32(PhonesRelatonsAddFielad.Text);
+                    newParentsPhone.PhoneNumber = PhonesRelatonsAddFielad.Text;
 
                     List<Phone> RelationsPhones = new List<Phone>();
                     RelationsPhones.Add(newParentsPhone);
@@ -102,7 +102,7 @@ namespace StudentsApp
                         Sex = SexField.Text,
                         Age = Convert.ToInt32(AgeField.Text),
                         Birthdate = DateTime.Parse(DateOfBirthField.Text),
-                        StudentPhones = phone,
+                       // StudentPhones = phone,
                         StudentProgress = newProgress,
                         Adress = newAdress,
                         Group = newGroup,

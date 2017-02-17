@@ -27,3 +27,4 @@ C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\bin\DbEntities.pdb
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\obj\Debug\StudService1.Migrations.ChangeStructureFields.resources
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\obj\Debug\StudService1.Migrations.ChangesTypeFields.resources
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudService1\obj\Debug\StudService1.Migrations.ChangeTypePhoneNumberField.resources

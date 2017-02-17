@@ -115,6 +115,10 @@
     <Compile Include="Migrations\201702140719510_ChangesTypeFields.Designer.cs">
       <DependentUpon>201702140719510_ChangesTypeFields.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702161219248_ChangeTypePhoneNumberField.cs" />
+    <Compile Include="Migrations\201702161219248_ChangeTypePhoneNumberField.Designer.cs">
+      <DependentUpon>201702161219248_ChangeTypePhoneNumberField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StudentsDbContext.cs" />
@@ -146,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702140719510_ChangesTypeFields.resx">
       <DependentUpon>201702140719510_ChangesTypeFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702161219248_ChangeTypePhoneNumberField.resx">
+      <DependentUpon>201702161219248_ChangeTypePhoneNumberField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

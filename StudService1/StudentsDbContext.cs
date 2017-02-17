@@ -17,7 +17,7 @@ namespace StudService1
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<StudentInfo>().HasMany(x => x.StudentPhones);
+        //    modelBuilder.Entity<StudentInfo>().HasMany(x => x.StudentPhones);
             modelBuilder.Entity<ParentsInfo>().HasMany(x => x.Phones);
             modelBuilder.Entity<StudentInfo>().HasMany(x => x.ParentsInfo);
 
