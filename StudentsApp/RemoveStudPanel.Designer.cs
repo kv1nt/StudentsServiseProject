@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listViewForRemove = new System.Windows.Forms.ListView();
+            this.ListViewForRemove = new System.Windows.Forms.ListView();
             this.id_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.name_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.patronymic_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,9 +50,9 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listViewForRemove
+            // ListViewForRemove
             // 
-            this.listViewForRemove.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ListViewForRemove.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.id_col,
             this.name_col,
             this.patronymic_col,
@@ -61,13 +61,13 @@
             this.age_col,
             this.birthday_col,
             this.mphone_col});
-            this.listViewForRemove.GridLines = true;
-            this.listViewForRemove.Location = new System.Drawing.Point(0, 94);
-            this.listViewForRemove.Name = "listViewForRemove";
-            this.listViewForRemove.Size = new System.Drawing.Size(1168, 354);
-            this.listViewForRemove.TabIndex = 6;
-            this.listViewForRemove.UseCompatibleStateImageBehavior = false;
-            this.listViewForRemove.View = System.Windows.Forms.View.Details;
+            this.ListViewForRemove.GridLines = true;
+            this.ListViewForRemove.Location = new System.Drawing.Point(0, 94);
+            this.ListViewForRemove.Name = "ListViewForRemove";
+            this.ListViewForRemove.Size = new System.Drawing.Size(1168, 354);
+            this.ListViewForRemove.TabIndex = 6;
+            this.ListViewForRemove.UseCompatibleStateImageBehavior = false;
+            this.ListViewForRemove.View = System.Windows.Forms.View.Details;
             // 
             // id_col
             // 
@@ -200,7 +200,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.listViewForRemove);
+            this.Controls.Add(this.ListViewForRemove);
             this.Controls.Add(this.groupBox1);
             this.Name = "RemoveStudPanel";
             this.Size = new System.Drawing.Size(1168, 451);
@@ -215,7 +215,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listViewForRemove;
+        private System.Windows.Forms.ListView ListViewForRemove;
         private System.Windows.Forms.ColumnHeader id_col;
         private System.Windows.Forms.ColumnHeader name_col;
         private System.Windows.Forms.ColumnHeader patronymic_col;

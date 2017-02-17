@@ -50,9 +50,9 @@ namespace StudentsApp
                                     student.Surname,student.LastName,student.Sex,student.Age.ToString(),
                                     student.Birthdate.ToString() /*phones*/};
                     var listView = new ListViewItem(row);
-                    listViewForRemove.Items.Add(listView);
+                    ListViewForRemove.Items.Add(listView);
                 
-                listViewForRemove.Columns[0].Width = 0;
+                ListViewForRemove.Columns[0].Width = 0;
             }
         }
     }
