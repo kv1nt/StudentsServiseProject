@@ -29,15 +29,15 @@ namespace StudentsApp
         public panelAllStud()
         {
             InitializeComponent();
-            using (StudentsServiceAppClient client = new StudentsServiceAppClient())
+            using (var client = new StudentsServiceAppClient())
             {
 
                 foreach (var item in client.StudetsInfoList())
                 {
+                   string phones = string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber.ToList()));
                     string[] row = {item.Id.ToString(), item.FirstName,
-                                     item.Surname,item.LastName,item.Sex,item.Age.ToString(),
-                                    item.Birthdate.ToString(),
-                                  /* string.Join(", ", item.StudentPhones.Select(x => x.PhoneNumber).ToArray())*/};
+                                    item.Surname,item.LastName,item.Sex,item.Age.ToString(),
+                                    item.Birthdate.ToString(), phones};
                     
                     var listViewItem = new ListViewItem(row);
                     listViewAllStud.Items.Add(listViewItem);
@@ -49,7 +49,7 @@ namespace StudentsApp
 
         private void listViewAllStud_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            
 
         }
 

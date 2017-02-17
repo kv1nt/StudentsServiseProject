@@ -77,7 +77,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:IdEntity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="PhoneNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

@@ -29,7 +29,18 @@ namespace StudService1
                 return context.StudentInfos.ToList().Select(x => x.Copy()).ToList();
             }
         }
-             
+
+        public StudentInfo FindStudentById(int id)
+        {
+            using (StudentsDbContext context = new StudentsDbContext())
+            {
+                StudentInfo findStudent = context.StudentInfos.Where(c => c.Id == id).ToList().SingleOrDefault();
+                if (findStudent == null) throw new ArgumentNullException(nameof(findStudent));
+
+                return findStudent;
+            }
+        }
+
     }
 }
 

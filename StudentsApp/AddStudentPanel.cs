@@ -68,8 +68,8 @@ namespace StudentsApp
                     Phone newParentsPhone = new Phone();
                     newParentsPhone.PhoneNumber = PhonesRelatonsAddFielad.Text;
 
-                    List<Phone> RelationsPhones = new List<Phone>();
-                    RelationsPhones.Add(newParentsPhone);
+                    List<Phone> relationsPhones = new List<Phone>();
+                    relationsPhones.Add(newParentsPhone);
 
                     ParentsInfo newMotheInfo = new ParentsInfo();
                     //newMotheInfo.Relation = (Relation)cbRelations.SelectedItems[0];
@@ -80,11 +80,11 @@ namespace StudentsApp
                     newMotheInfo.FirstName = MotherNameField.Text;
                     newMotheInfo.LastName = MotherLastNameField.Text;
                     newMotheInfo.WorkPlace = MotherWorkPlace.Text;
-                    newMotheInfo.Phones = RelationsPhones;
+                    newMotheInfo.Phones = relationsPhones;
                     newFatherInfo.FirstName = FatherNameField.Text;
                     newFatherInfo.LastName = FatherLastNameField.Text;
                     newFatherInfo.WorkPlace = FatherWorkPlaseField.Text;
-                    newFatherInfo.Phones = RelationsPhones;
+                    newFatherInfo.Phones = relationsPhones;
                   
                     List<ParentsInfo> parents = new List<ParentsInfo>();
                     parents.Add(newMotheInfo);
@@ -102,7 +102,7 @@ namespace StudentsApp
                         Sex = SexField.Text,
                         Age = Convert.ToInt32(AgeField.Text),
                         Birthdate = DateTime.Parse(DateOfBirthField.Text),
-                       // StudentPhones = phone,
+                        StudentPhones = phone,
                         StudentProgress = newProgress,
                         Adress = newAdress,
                         Group = newGroup,

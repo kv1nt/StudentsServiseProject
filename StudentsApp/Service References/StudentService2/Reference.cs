@@ -26,6 +26,12 @@ namespace StudentsApp.StudentService2 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/StudetsInfoList", ReplyAction="http://tempuri.org/IStudentsServiceApp/StudetsInfoListResponse")]
         System.Threading.Tasks.Task<DbEntities.StudentInfo[]> StudetsInfoListAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/FindStudentById", ReplyAction="http://tempuri.org/IStudentsServiceApp/FindStudentByIdResponse")]
+        DbEntities.StudentInfo FindStudentById(int _id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/FindStudentById", ReplyAction="http://tempuri.org/IStudentsServiceApp/FindStudentByIdResponse")]
+        System.Threading.Tasks.Task<DbEntities.StudentInfo> FindStudentByIdAsync(int _id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,6 +75,14 @@ namespace StudentsApp.StudentService2 {
         
         public System.Threading.Tasks.Task<DbEntities.StudentInfo[]> StudetsInfoListAsync() {
             return base.Channel.StudetsInfoListAsync();
+        }
+        
+        public DbEntities.StudentInfo FindStudentById(int _id) {
+            return base.Channel.FindStudentById(_id);
+        }
+        
+        public System.Threading.Tasks.Task<DbEntities.StudentInfo> FindStudentByIdAsync(int _id) {
+            return base.Channel.FindStudentByIdAsync(_id);
         }
     }
 }

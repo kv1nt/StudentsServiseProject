@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DbEntities;
+using StudentsApp.StudentService2;
 using StudService1;
 
 namespace StudentsApp
@@ -37,18 +39,20 @@ namespace StudentsApp
 
         private void FindStud_btn_Click(object sender, EventArgs e)
         {
-
-            using (var context = new StudentsDbContext())
+            var IdField = Convert.ToInt32(FindStudField.Text);
+            //listViewForRemove
+            using (StudentsServiceAppClient client = new StudentsServiceAppClient())
             {
-                var lastName = FindStudField.Text;
-                var student = context.StudentInfos.Where(p => p.LastName == lastName).ToList();
-
-                //listViewForRemove
-
-                context.StudentInfos.RemoveRange(student);
-                context.SaveChanges();
-
-
+                StudentInfo student = client.FindStudentById(IdField);
+                                
+                   // string phones = string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber.ToList()));
+                    string[] row = {student.Id.ToString(), student.FirstName,
+                                    student.Surname,student.LastName,student.Sex,student.Age.ToString(),
+                                    student.Birthdate.ToString() /*phones*/};
+                    var listView = new ListViewItem(row);
+                    listViewForRemove.Items.Add(listView);
+                
+                listViewForRemove.Columns[0].Width = 0;
             }
         }
     }

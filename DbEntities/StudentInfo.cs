@@ -9,7 +9,7 @@ namespace DbEntities
     {
         public StudentInfo()
         {
-           // StudentPhones = new List<Phone>();
+            StudentPhones = new List<Phone>();
             ParentsInfo = new List<ParentsInfo>();
         }
         [MaxLength(250)]
@@ -31,7 +31,7 @@ namespace DbEntities
         [Required]
         public DateTime Birthdate { get; set; }
 
-        public virtual string StudentPhones { get; set; }
+        public virtual ICollection<Phone> StudentPhones { get; set; }
         public virtual ICollection<ParentsInfo> ParentsInfo { get; set; }
         public virtual Adress Adress { get; set; }
         public virtual Group Group { get; set; }
@@ -39,22 +39,27 @@ namespace DbEntities
 
         public StudentInfo Copy()
         {
-            return new StudentInfo
+            var newStudent = new StudentInfo
             {
                 Age = this.Age,
                 Birthdate = this.Birthdate,
                 FirstName = this.FirstName,
                 LastName = this.LastName,
-                Adress = this.Adress?.Copy(),
+                //Adress = this.Adress?.Copy(), // Same
                 Group = this.Group?.Copy(),
                 NumberRecordBook = this.NumberRecordBook,
                 Sex = this.Sex,
                 Surname = this.Surname,
                 Id = this.Id,
                 StudentProgress = this.StudentProgress?.Copy(),
-                StudentPhones = this.StudentPhones.Select(x => x.Copy()).ToList(),
-                ParentsInfo = this.ParentsInfo.Select(x => x.Copy()).ToList()
+                StudentPhones = this.StudentPhones?.Select(x => x.Copy()).ToList(),
+                ParentsInfo = this.ParentsInfo?.Select(x => x.Copy()).ToList()
             };
+
+            if (this.Adress != null)   //Same
+                newStudent.Adress = this.Adress.Copy(); 
+
+            return newStudent;
         }
     }
 }
