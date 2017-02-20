@@ -21,8 +21,7 @@ namespace StudService1
         [OperationContract]
         StudentInfo FindStudentById(int _id);
         [OperationContract]
-        StudentInfo FindStudentByLastName(string _lastName);
-
+        void DeleteStudentById(int _id);
 
     }
 }

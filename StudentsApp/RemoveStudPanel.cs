@@ -39,26 +39,49 @@ namespace StudentsApp
 
         private void FindStud_btn_Click(object sender, EventArgs e)
         {
-            var IdField = Convert.ToInt32(FindStudField.Text);
-           
+            RemoveList.Items.Clear();
+
+            var snfield = FindStudField.Text;
+    
             using (StudentsServiceAppClient client = new StudentsServiceAppClient())
             {
-                StudentInfo student = client.FindStudentById(IdField);
-                                                    
-                    string[] row = {student.Id.ToString(), student.FirstName,student.Surname, student.LastName, student.Sex, student.Age.ToString(),
-                                student.Birthdate.ToString(), string.Join(", ", student.StudentPhones?.Select(x => x.PhoneNumber.ToArray()))};
+                foreach (var item in client.StudetsInfoList())
+                {
+                    if (item.LastName == snfield)
+                    {
+                        string[] row =
+                        {
+                            item.Id.ToString(), item.FirstName, item.Surname, item.LastName, item.Sex,
+                            item.Age.ToString(),
+                            item.Birthdate.ToString(),
+                            string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber.ToArray()))
 
-                var listView = new ListViewItem(row);
-                RemoveList.Items.Add(listView);
-
-                RemoveList.Columns[0].Width = 0;
+                        };
+                        var listView = new ListViewItem(row);
+                        RemoveList.Items.Add(listView);                       
+                        
+                    }
+                   
+                }
+                
             }
-    
+            
         }
 
         private void RemoveList_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-    }
-}
+
+        private void RemoveStud_btn_Click(object sender, EventArgs e)
+        {
+             int idStud = Convert.ToInt32(RemoveStudByIdField.Text);
+            using (StudentsServiceAppClient client = new StudentsServiceAppClient())
+            {
+                client.DeleteStudentById(idStud);
+                
+            }
+        }
+
+     }
+  }

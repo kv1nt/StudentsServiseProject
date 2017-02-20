@@ -25,11 +25,11 @@
   <wsdl:message name="IStudentsServiceApp_FindStudentById_OutputMessage">
     <wsdl:part name="parameters" element="tns:FindStudentByIdResponse" />
   </wsdl:message>
-  <wsdl:message name="IStudentsServiceApp_FindStudentByLastName_InputMessage">
-    <wsdl:part name="parameters" element="tns:FindStudentByLastName" />
+  <wsdl:message name="IStudentsServiceApp_DeleteStudentById_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudentById" />
   </wsdl:message>
-  <wsdl:message name="IStudentsServiceApp_FindStudentByLastName_OutputMessage">
-    <wsdl:part name="parameters" element="tns:FindStudentByLastNameResponse" />
+  <wsdl:message name="IStudentsServiceApp_DeleteStudentById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudentByIdResponse" />
   </wsdl:message>
   <wsdl:portType name="IStudentsServiceApp">
     <wsdl:operation name="AddNewStudent">
@@ -44,9 +44,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/FindStudentById" message="tns:IStudentsServiceApp_FindStudentById_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/FindStudentByIdResponse" message="tns:IStudentsServiceApp_FindStudentById_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="FindStudentByLastName">
-      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/FindStudentByLastName" message="tns:IStudentsServiceApp_FindStudentByLastName_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/FindStudentByLastNameResponse" message="tns:IStudentsServiceApp_FindStudentByLastName_OutputMessage" />
+    <wsdl:operation name="DeleteStudentById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/DeleteStudentById" message="tns:IStudentsServiceApp_DeleteStudentById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/DeleteStudentByIdResponse" message="tns:IStudentsServiceApp_DeleteStudentById_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IStudentsServiceApp" type="tns:IStudentsServiceApp">
@@ -78,8 +78,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="FindStudentByLastName">
-      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/FindStudentByLastName" style="document" />
+    <wsdl:operation name="DeleteStudentById">
+      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/DeleteStudentById" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

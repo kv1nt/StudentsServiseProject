@@ -42,7 +42,6 @@ namespace StudentsApp
                     var listViewItem = new ListViewItem(row);
                     listViewAllStud.Items.Add(listViewItem);
                 }
-                listViewAllStud.Columns[0].Width = 0;
             }
 
         }

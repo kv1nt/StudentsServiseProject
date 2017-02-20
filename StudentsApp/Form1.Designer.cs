@@ -188,6 +188,7 @@
             this.exit_btn.Size = new System.Drawing.Size(38, 34);
             this.exit_btn.TabIndex = 5;
             this.exit_btn.UseVisualStyleBackColor = false;
+            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
             // 
             // addStudent_btn
             // 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.listViewAllStud = new System.Windows.Forms.ListView();
-            this.id_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.id0 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.name_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.patronymic_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.surname_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,7 +42,7 @@
             // listViewAllStud
             // 
             this.listViewAllStud.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.id_col,
+            this.id0,
             this.name_col,
             this.patronymic_col,
             this.surname_col,
@@ -59,10 +59,10 @@
             this.listViewAllStud.View = System.Windows.Forms.View.Details;
             this.listViewAllStud.SelectedIndexChanged += new System.EventHandler(this.listViewAllStud_SelectedIndexChanged);
             // 
-            // id_col
+            // id0
             // 
-            this.id_col.Text = "ID";
-            this.id_col.Width = 32;
+            this.id0.Text = "ID";
+            this.id0.Width = 32;
             // 
             // name_col
             // 
@@ -115,7 +115,7 @@
         #endregion
 
         private System.Windows.Forms.ListView listViewAllStud;
-        private System.Windows.Forms.ColumnHeader id_col;
+        private System.Windows.Forms.ColumnHeader id0;
         private System.Windows.Forms.ColumnHeader name_col;
         private System.Windows.Forms.ColumnHeader patronymic_col;
         private System.Windows.Forms.ColumnHeader surname_col;

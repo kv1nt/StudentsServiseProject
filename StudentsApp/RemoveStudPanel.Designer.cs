@@ -119,6 +119,7 @@
             this.RemoveStud_btn.TabIndex = 2;
             this.RemoveStud_btn.Text = "Видалити";
             this.RemoveStud_btn.UseVisualStyleBackColor = true;
+            this.RemoveStud_btn.Click += new System.EventHandler(this.RemoveStud_btn_Click);
             // 
             // RemoveStudByIdField
             // 

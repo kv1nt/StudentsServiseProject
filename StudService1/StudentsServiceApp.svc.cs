@@ -34,24 +34,27 @@ namespace StudService1
         {
             using (StudentsDbContext context = new StudentsDbContext())
             {
-                StudentInfo findStudent = context.StudentInfos.Where(c => c.Id == id).ToList().SingleOrDefault();
-                if (findStudent == null)
-                    throw new ArgumentNullException(nameof(findStudent));
+                StudentInfo student = context.StudentInfos.Where(c => c.Id == id).ToList().SingleOrDefault();
+                if (student == null)
+                    throw new ArgumentNullException(nameof(student));
 
-                return findStudent;
+                return student;
             }
         }
-        public StudentInfo FindStudentByLastName(string lastName)
-        {
-            using (StudentsDbContext context = new StudentsDbContext())
-            {
-                StudentInfo findStudent = context.StudentInfos.Where(c => c.LastName == lastName).ToList().SingleOrDefault();
-                if (findStudent == null)
-                    throw new ArgumentNullException(nameof(findStudent));
 
-                return findStudent;
+        public void DeleteStudentById(int id)
+        {
+            
+                using (StudentsDbContext context = new StudentsDbContext())
+                {
+                StudentInfo student = context.StudentInfos.Where(c => c.Id == id).ToList().SingleOrDefault();
+
+                context.StudentInfos.Remove(student);
+                context.SaveChanges();
             }
+                            
         }
     }
-}
+    }
+
 

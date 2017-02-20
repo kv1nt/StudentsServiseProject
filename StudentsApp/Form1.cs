@@ -103,5 +103,10 @@ namespace StudentsApp
                 UpdateStudetInfo.updateStudent.BringToFront();
             }
         }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
