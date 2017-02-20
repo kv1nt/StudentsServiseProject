@@ -20,6 +20,8 @@ namespace StudService1
         List<StudentInfo> StudetsInfoList();
         [OperationContract]
         StudentInfo FindStudentById(int _id);
+        [OperationContract]
+        StudentInfo FindStudentByLastName(string _lastName);
 
 
     }

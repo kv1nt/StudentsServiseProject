@@ -28,15 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ListViewForRemove = new System.Windows.Forms.ListView();
-            this.id_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.name_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.patronymic_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.surname_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.sex_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.age_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.birthday_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.mphone_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.FindStud_btn = new System.Windows.Forms.Button();
             this.FindStudField = new System.Windows.Forms.TextBox();
@@ -46,67 +37,18 @@
             this.RemoveStud_btn = new System.Windows.Forms.Button();
             this.RemoveStudByIdField = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.RemoveList = new System.Windows.Forms.ListView();
+            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.сolName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lastName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.surname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.sex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.age = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dateofbirth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.mobphone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ListViewForRemove
-            // 
-            this.ListViewForRemove.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.id_col,
-            this.name_col,
-            this.patronymic_col,
-            this.surname_col,
-            this.sex_col,
-            this.age_col,
-            this.birthday_col,
-            this.mphone_col});
-            this.ListViewForRemove.GridLines = true;
-            this.ListViewForRemove.Location = new System.Drawing.Point(0, 94);
-            this.ListViewForRemove.Name = "ListViewForRemove";
-            this.ListViewForRemove.Size = new System.Drawing.Size(1168, 354);
-            this.ListViewForRemove.TabIndex = 6;
-            this.ListViewForRemove.UseCompatibleStateImageBehavior = false;
-            this.ListViewForRemove.View = System.Windows.Forms.View.Details;
-            // 
-            // id_col
-            // 
-            this.id_col.Text = "ID";
-            this.id_col.Width = 32;
-            // 
-            // name_col
-            // 
-            this.name_col.Text = "Ім\'я";
-            this.name_col.Width = 189;
-            // 
-            // patronymic_col
-            // 
-            this.patronymic_col.Text = "Прізвище";
-            this.patronymic_col.Width = 214;
-            // 
-            // surname_col
-            // 
-            this.surname_col.Text = "По батькові";
-            this.surname_col.Width = 205;
-            // 
-            // sex_col
-            // 
-            this.sex_col.Text = "Стать";
-            this.sex_col.Width = 75;
-            // 
-            // age_col
-            // 
-            this.age_col.Text = "Вік";
-            // 
-            // birthday_col
-            // 
-            this.birthday_col.Text = "Дата народженн";
-            this.birthday_col.Width = 148;
-            // 
-            // mphone_col
-            // 
-            this.mphone_col.Text = "Мобільний телефон";
-            this.mphone_col.Width = 241;
             // 
             // groupBox1
             // 
@@ -194,13 +136,71 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Введіть ID";
             // 
+            // RemoveList
+            // 
+            this.RemoveList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ID,
+            this.сolName,
+            this.lastName,
+            this.surname,
+            this.sex,
+            this.age,
+            this.dateofbirth,
+            this.mobphone});
+            this.RemoveList.GridLines = true;
+            this.RemoveList.Location = new System.Drawing.Point(0, 99);
+            this.RemoveList.Name = "RemoveList";
+            this.RemoveList.Size = new System.Drawing.Size(1165, 352);
+            this.RemoveList.TabIndex = 9;
+            this.RemoveList.UseCompatibleStateImageBehavior = false;
+            this.RemoveList.View = System.Windows.Forms.View.Details;
+            this.RemoveList.SelectedIndexChanged += new System.EventHandler(this.RemoveList_SelectedIndexChanged);
+            // 
+            // ID
+            // 
+            this.ID.Text = "ID";
+            this.ID.Width = 51;
+            // 
+            // сolName
+            // 
+            this.сolName.Text = "Ім\'я";
+            this.сolName.Width = 124;
+            // 
+            // lastName
+            // 
+            this.lastName.Text = "По батькові";
+            this.lastName.Width = 130;
+            // 
+            // surname
+            // 
+            this.surname.Text = "Прізвище";
+            this.surname.Width = 172;
+            // 
+            // sex
+            // 
+            this.sex.Text = "Стать";
+            // 
+            // age
+            // 
+            this.age.Text = "Вік";
+            // 
+            // dateofbirth
+            // 
+            this.dateofbirth.Text = "Дата народження";
+            this.dateofbirth.Width = 159;
+            // 
+            // mobphone
+            // 
+            this.mobphone.Text = "Номер мобільного";
+            this.mobphone.Width = 405;
+            // 
             // RemoveStudPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.RemoveList);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.ListViewForRemove);
             this.Controls.Add(this.groupBox1);
             this.Name = "RemoveStudPanel";
             this.Size = new System.Drawing.Size(1168, 451);
@@ -214,16 +214,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView ListViewForRemove;
-        private System.Windows.Forms.ColumnHeader id_col;
-        private System.Windows.Forms.ColumnHeader name_col;
-        private System.Windows.Forms.ColumnHeader patronymic_col;
-        private System.Windows.Forms.ColumnHeader surname_col;
-        private System.Windows.Forms.ColumnHeader sex_col;
-        private System.Windows.Forms.ColumnHeader age_col;
-        private System.Windows.Forms.ColumnHeader birthday_col;
-        private System.Windows.Forms.ColumnHeader mphone_col;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button FindStud_btn;
         private System.Windows.Forms.TextBox FindStudField;
@@ -233,5 +223,14 @@
         private System.Windows.Forms.Button RemoveStud_btn;
         private System.Windows.Forms.TextBox RemoveStudByIdField;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListView RemoveList;
+        private System.Windows.Forms.ColumnHeader ID;
+        private System.Windows.Forms.ColumnHeader сolName;
+        private System.Windows.Forms.ColumnHeader lastName;
+        private System.Windows.Forms.ColumnHeader surname;
+        private System.Windows.Forms.ColumnHeader sex;
+        private System.Windows.Forms.ColumnHeader age;
+        private System.Windows.Forms.ColumnHeader dateofbirth;
+        private System.Windows.Forms.ColumnHeader mobphone;
     }
 }

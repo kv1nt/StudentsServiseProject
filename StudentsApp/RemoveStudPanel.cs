@@ -40,20 +40,25 @@ namespace StudentsApp
         private void FindStud_btn_Click(object sender, EventArgs e)
         {
             var IdField = Convert.ToInt32(FindStudField.Text);
-            //listViewForRemove
+           
             using (StudentsServiceAppClient client = new StudentsServiceAppClient())
             {
                 StudentInfo student = client.FindStudentById(IdField);
-                                
-                   // string phones = string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber.ToList()));
-                    string[] row = {student.Id.ToString(), student.FirstName,
-                                    student.Surname,student.LastName,student.Sex,student.Age.ToString(),
-                                    student.Birthdate.ToString() /*phones*/};
-                    var listView = new ListViewItem(row);
-                    ListViewForRemove.Items.Add(listView);
-                
-                ListViewForRemove.Columns[0].Width = 0;
+                                                    
+                    string[] row = {student.Id.ToString(), student.FirstName,student.Surname, student.LastName, student.Sex, student.Age.ToString(),
+                                student.Birthdate.ToString(), string.Join(", ", student.StudentPhones?.Select(x => x.PhoneNumber.ToArray()))};
+
+                var listView = new ListViewItem(row);
+                RemoveList.Items.Add(listView);
+
+                RemoveList.Columns[0].Width = 0;
             }
+    
+        }
+
+        private void RemoveList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

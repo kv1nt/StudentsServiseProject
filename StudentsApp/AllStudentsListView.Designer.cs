@@ -53,7 +53,7 @@
             this.listViewAllStud.GridLines = true;
             this.listViewAllStud.Location = new System.Drawing.Point(3, 3);
             this.listViewAllStud.Name = "listViewAllStud";
-            this.listViewAllStud.Size = new System.Drawing.Size(1162, 451);
+            this.listViewAllStud.Size = new System.Drawing.Size(1136, 451);
             this.listViewAllStud.TabIndex = 0;
             this.listViewAllStud.UseCompatibleStateImageBehavior = false;
             this.listViewAllStud.View = System.Windows.Forms.View.Details;
