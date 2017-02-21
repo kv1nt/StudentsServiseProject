@@ -8,18 +8,19 @@ using DbEntities;
 
 namespace StudService1
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IStudentsServiceApp" in both code and config file together.
+   
     [ServiceContract]
     public interface IStudentsServiceApp
-    {
-      
+    {      
         [OperationContract]
         void AddNewStudent(StudentInfo student); // Add main info
 
         [OperationContract]
         List<StudentInfo> StudetsInfoList();
+
         [OperationContract]
         StudentInfo FindStudentById(int _id);
+
         [OperationContract]
         void DeleteStudentById(int _id);
 

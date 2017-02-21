@@ -25,7 +25,7 @@ namespace DbEntities
         {
             return new ParentsInfo
             {
-                Relation = this.Relation.Copy(),
+                Relation = this.Relation?.Copy(),
                 LastName = this.LastName,
                 FirstName = this.FirstName,
                 Phones = this.Phones?.Select(x => x.Copy()).ToList(),

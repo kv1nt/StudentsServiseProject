@@ -26,7 +26,8 @@ namespace StudService1
         {
             using (StudentsDbContext context = new StudentsDbContext())
             {
-                return context.StudentInfos.ToList().Select(x => x.Copy()).ToList();
+                var y = context.StudentInfos.ToList().Select(x => x.Copy()).ToList();
+                return y;
             }
         }
 
@@ -44,15 +45,30 @@ namespace StudService1
 
         public void DeleteStudentById(int id)
         {
-            
+            StudentInfo studentToDelete;
+           
+            using (var ctx = new StudentsDbContext())
+            {
+                studentToDelete = ctx.StudentInfos.Where(s => s.Id == id).FirstOrDefault<StudentInfo>();
+            }
+
+            using (var newContext = new StudentsDbContext())
+            {
+                newContext.Entry(studentToDelete).State = EntityState.Deleted;
+
+                newContext.SaveChanges();
+            }
+
+
+            /*  
                 using (StudentsDbContext context = new StudentsDbContext())
                 {
-                StudentInfo student = context.StudentInfos.Where(c => c.Id == id).ToList().SingleOrDefault();
-
-                context.StudentInfos.Remove(student);
-                context.SaveChanges();
-            }
-                            
+                    StudentInfo student = (StudentInfo)context.StudentInfos.Where(c => c.Id == id).First();
+                    if (student == null) throw new ArgumentNullException(nameof(student));
+                    context.StudentInfos.Remove(student);
+                    context.SaveChanges();
+                }
+              */
         }
     }
     }

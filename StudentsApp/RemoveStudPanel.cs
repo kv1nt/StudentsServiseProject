@@ -75,13 +75,18 @@ namespace StudentsApp
 
         private void RemoveStud_btn_Click(object sender, EventArgs e)
         {
-             int idStud = Convert.ToInt32(RemoveStudByIdField.Text);
+            int idStud = Convert.ToInt32(RemoveStudByIdField.Text);
+
             using (StudentsServiceAppClient client = new StudentsServiceAppClient())
             {
-                client.DeleteStudentById(idStud);
-                
+                foreach (var item in client.StudetsInfoList())
+                {
+                    if (item.Id == idStud)
+                    {
+                        client.DeleteStudentById(idStud);
+                    }
+                }
             }
         }
-
      }
   }

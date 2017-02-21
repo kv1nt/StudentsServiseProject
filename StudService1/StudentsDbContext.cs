@@ -12,12 +12,11 @@ namespace StudService1
     {
         public StudentsDbContext() : base("connectToDb")
         {
-            this.Configuration.ProxyCreationEnabled = false;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-        //    modelBuilder.Entity<StudentInfo>().HasMany(x => x.StudentPhones);
+            modelBuilder.Entity<StudentInfo>().HasMany(x => x.StudentPhones);
             modelBuilder.Entity<ParentsInfo>().HasMany(x => x.Phones);
             modelBuilder.Entity<StudentInfo>().HasMany(x => x.ParentsInfo);
 

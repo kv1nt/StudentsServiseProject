@@ -34,7 +34,7 @@ namespace StudentsApp
 
                 foreach (var item in client.StudetsInfoList())
                 {
-                   string phones = string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber.ToList()));
+                   string phones = string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber));
                     string[] row = {item.Id.ToString(), item.FirstName,
                                     item.Surname,item.LastName,item.Sex,item.Age.ToString(),
                                     item.Birthdate.ToString(), phones};
