@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Windows.Forms;
 using DbEntities;
 
 
@@ -45,11 +46,12 @@ namespace StudService1
 
         public void DeleteStudentById(int id)
         {
+            /*
             StudentInfo studentToDelete;
            
             using (var ctx = new StudentsDbContext())
             {
-                studentToDelete = ctx.StudentInfos.Where(s => s.Id == id).FirstOrDefault<StudentInfo>();
+                studentToDelete = ctx.StudentInfos.Where(s => s.Id == id).First<StudentInfo>();
             }
 
             using (var newContext = new StudentsDbContext())
@@ -58,19 +60,28 @@ namespace StudService1
 
                 newContext.SaveChanges();
             }
-
-
-            /*  
+            */
+            try
+            {
                 using (StudentsDbContext context = new StudentsDbContext())
                 {
-                    StudentInfo student = (StudentInfo)context.StudentInfos.Where(c => c.Id == id).First();
-                    if (student == null) throw new ArgumentNullException(nameof(student));
+                    StudentInfo student = context.StudentInfos.Where(c => c.Id == id).ToList().First();
+                    List<ParentsInfo> parents = student.ParentsInfo.ToList();
+
+                    foreach (var parentsInfo in parents)
+                    {
+                        context.ParentsInfos.Remove(parentsInfo);
+                    }
                     context.StudentInfos.Remove(student);
                     context.SaveChanges();
                 }
-              */
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
-    }
+}
 
 

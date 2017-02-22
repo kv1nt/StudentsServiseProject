@@ -23,8 +23,8 @@ namespace StudService1.Migrations
             AddColumn("dbo.Relations", "Name", c => c.String(nullable: false, maxLength: 250));
             CreateIndex("dbo.Phones", "ParentsInfo_Id");
             CreateIndex("dbo.Phones", "StudentInfo_Id");
-            AddForeignKey("dbo.Phones", "ParentsInfo_Id", "dbo.ParentsInfoes", "Id");
-            AddForeignKey("dbo.Phones", "StudentInfo_Id", "dbo.StudentInfoes", "Id");
+            AddForeignKey("dbo.Phones", "ParentsInfo_Id", "dbo.ParentsInfoes", "Id", cascadeDelete: true);
+            AddForeignKey("dbo.Phones", "StudentInfo_Id", "dbo.StudentInfoes", "Id", cascadeDelete:true);
             DropColumn("dbo.Adresses", "IdAdress");
             DropColumn("dbo.ParentsInfoes", "MotherFirstName");
             DropColumn("dbo.ParentsInfoes", "MotherSecondName");

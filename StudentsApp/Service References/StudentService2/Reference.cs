@@ -28,16 +28,16 @@ namespace StudentsApp.StudentService2 {
         System.Threading.Tasks.Task<DbEntities.StudentInfo[]> StudetsInfoListAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/FindStudentById", ReplyAction="http://tempuri.org/IStudentsServiceApp/FindStudentByIdResponse")]
-        DbEntities.StudentInfo FindStudentById(int _id);
+        DbEntities.StudentInfo FindStudentById(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/FindStudentById", ReplyAction="http://tempuri.org/IStudentsServiceApp/FindStudentByIdResponse")]
-        System.Threading.Tasks.Task<DbEntities.StudentInfo> FindStudentByIdAsync(int _id);
+        System.Threading.Tasks.Task<DbEntities.StudentInfo> FindStudentByIdAsync(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/DeleteStudentById", ReplyAction="http://tempuri.org/IStudentsServiceApp/DeleteStudentByIdResponse")]
-        void DeleteStudentById(int _id);
+        void DeleteStudentById(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/DeleteStudentById", ReplyAction="http://tempuri.org/IStudentsServiceApp/DeleteStudentByIdResponse")]
-        System.Threading.Tasks.Task DeleteStudentByIdAsync(int _id);
+        System.Threading.Tasks.Task DeleteStudentByIdAsync(int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -83,20 +83,20 @@ namespace StudentsApp.StudentService2 {
             return base.Channel.StudetsInfoListAsync();
         }
         
-        public DbEntities.StudentInfo FindStudentById(int _id) {
-            return base.Channel.FindStudentById(_id);
+        public DbEntities.StudentInfo FindStudentById(int id) {
+            return base.Channel.FindStudentById(id);
         }
         
-        public System.Threading.Tasks.Task<DbEntities.StudentInfo> FindStudentByIdAsync(int _id) {
-            return base.Channel.FindStudentByIdAsync(_id);
+        public System.Threading.Tasks.Task<DbEntities.StudentInfo> FindStudentByIdAsync(int id) {
+            return base.Channel.FindStudentByIdAsync(id);
         }
         
-        public void DeleteStudentById(int _id) {
-            base.Channel.DeleteStudentById(_id);
+        public void DeleteStudentById(int id) {
+            base.Channel.DeleteStudentById(id);
         }
         
-        public System.Threading.Tasks.Task DeleteStudentByIdAsync(int _id) {
-            return base.Channel.DeleteStudentByIdAsync(_id);
+        public System.Threading.Tasks.Task DeleteStudentByIdAsync(int id) {
+            return base.Channel.DeleteStudentByIdAsync(id);
         }
     }
 }

@@ -12,38 +12,44 @@ using StudentsApp.StudentService2;
 
 namespace StudentsApp
 {
-    public partial class panelAllStud : UserControl
+    public partial class PanelAllStud : UserControl
     {
-        private static panelAllStud studListView;
+        //private static PanelAllStud _studListView;
 
-        public static panelAllStud showAllStud
-        {
-            get
-            {
-                if (studListView == null)
-                    studListView = new panelAllStud();
-                return studListView;
-            }
-        }
+        //public static PanelAllStud ShowAllStud
+        //{
+        //    get
+        //    {
+        //        if (_studListView == null)
+        //            _studListView = new PanelAllStud();
+        //        return _studListView;
+        //    }
+        //}
 
-        public panelAllStud()
+        public PanelAllStud()
         {
             InitializeComponent();
+        }
+
+        public void LoadValueFromService()
+        {
+            listViewAllStud.Items.Clear();
             using (var client = new StudentsServiceAppClient())
             {
-
                 foreach (var item in client.StudetsInfoList())
                 {
-                   string phones = string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber));
-                    string[] row = {item.Id.ToString(), item.FirstName,
-                                    item.Surname,item.LastName,item.Sex,item.Age.ToString(),
-                                    item.Birthdate.ToString(), phones};
-                    
+                    string phones = string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber).ToList());
+                    string[] row =
+                    {
+                        item.Id.ToString(), item.FirstName,
+                        item.Surname, item.LastName, item.Sex, item.Age.ToString(),
+                        item.Birthdate.ToString(), phones
+                    };
+
                     var listViewItem = new ListViewItem(row);
                     listViewAllStud.Items.Add(listViewItem);
                 }
             }
-
         }
 
         private void listViewAllStud_SelectedIndexChanged(object sender, EventArgs e)

@@ -1,6 +1,6 @@
 ﻿namespace StudentsApp
 {
-    partial class panelAllStud
+    partial class PanelAllStud
     {
         /// <summary> 
         /// Required designer variable.
@@ -99,13 +99,13 @@
             this.mphone_col.Text = "Мобільний номер телефону";
             this.mphone_col.Width = 214;
             // 
-            // panelAllStud
+            // PanelAllStud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.listViewAllStud);
             this.Location = new System.Drawing.Point(13, 13);
-            this.Name = "panelAllStud";
+            this.Name = "PanelAllStud";
             this.Size = new System.Drawing.Size(1168, 451);
             this.Load += new System.EventHandler(this.panelAllStud_Load);
             this.ResumeLayout(false);

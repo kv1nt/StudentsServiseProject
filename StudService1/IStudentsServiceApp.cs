@@ -19,10 +19,10 @@ namespace StudService1
         List<StudentInfo> StudetsInfoList();
 
         [OperationContract]
-        StudentInfo FindStudentById(int _id);
+        StudentInfo FindStudentById(int id);
 
         [OperationContract]
-        void DeleteStudentById(int _id);
+        void DeleteStudentById(int id);
 
     }
 }

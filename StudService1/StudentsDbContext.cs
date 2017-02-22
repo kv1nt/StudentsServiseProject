@@ -23,7 +23,7 @@ namespace StudService1
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<StudentInfo> StudentInfos { get; set; }    //Tables
+        public DbSet<StudentInfo> StudentInfos { get; set; }    
         public DbSet<ParentsInfo> ParentsInfos { get; set; }
         public DbSet<Phone> Phones { get; set; }
         public DbSet<Adress> Adresses { get; set; }

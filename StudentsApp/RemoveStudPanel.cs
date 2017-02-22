@@ -75,18 +75,23 @@ namespace StudentsApp
 
         private void RemoveStud_btn_Click(object sender, EventArgs e)
         {
-            int idStud = Convert.ToInt32(RemoveStudByIdField.Text);
-
-            using (StudentsServiceAppClient client = new StudentsServiceAppClient())
+            try
             {
-                foreach (var item in client.StudetsInfoList())
+                int idStud = Convert.ToInt32(RemoveStudByIdField.Text);
+
+                using (StudentsServiceAppClient client = new StudentsServiceAppClient())
                 {
-                    if (item.Id == idStud)
+                    foreach (var item in client.StudetsInfoList())
                     {
-                        client.DeleteStudentById(idStud);
+                        if (item.Id == idStud)
+                        {
+                            client.DeleteStudentById(idStud);
+                        }
                     }
                 }
             }
+            catch (Exception ex) { MessageBox.Show(ex.InnerException.ToString()); }
+            
         }
      }
   }
