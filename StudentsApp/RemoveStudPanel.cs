@@ -54,18 +54,14 @@ namespace StudentsApp
                             item.Id.ToString(), item.FirstName, item.Surname, item.LastName, item.Sex,
                             item.Age.ToString(),
                             item.Birthdate.ToString(),
-                            string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber.ToArray()))
+                            string.Join(", ", item.StudentPhones?.Select(x => x.PhoneNumber.ToString()))
 
                         };
                         var listView = new ListViewItem(row);
-                        RemoveList.Items.Add(listView);                       
-                        
-                    }
-                   
-                }
-                
-            }
-            
+                        RemoveList.Items.Add(listView);                                               
+                    }                   
+                }                
+            }            
         }
 
         private void RemoveList_SelectedIndexChanged(object sender, EventArgs e)
