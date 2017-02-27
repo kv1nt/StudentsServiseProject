@@ -86,7 +86,6 @@ namespace StudentsApp
                     newFatherInfo.FirstName = FatherNameField.Text;
                     newFatherInfo.LastName = FatherLastNameField.Text;
                     newFatherInfo.WorkPlace = FatherWorkPlaseField.Text;
-                    newFatherInfo.Phones = relationsPhones;
                     newFatherInfo.Relation = newRelationInfo;
 
                    List<ParentsInfo> parents = new List<ParentsInfo>();

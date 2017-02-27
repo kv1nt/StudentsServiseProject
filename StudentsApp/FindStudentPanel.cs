@@ -62,10 +62,6 @@ namespace StudentsApp
                         string spec = string.Join(",", item.ParentsInfo?.Select(x => x.WorkPlace));
                         string additionalRelation = string.Join(",", item.ParentsInfo?.Select(x => x.Relation.Name).ToList());
 
-                        
-
-
-
                         string[] splitString = name.Split(',');
                         string motherFName = splitString[0].Trim();
                         string fatherFName = splitString[1].Trim();
@@ -80,7 +76,6 @@ namespace StudentsApp
 
                         string[] splitString4 = additionalRelation.Split(',');
                         string additionalRels = splitString4[0].Trim();
-
 
                         string[] row3 = {motherFName, motherLName, motherSpec};
                         string[] row4 = {fatherFName, fatherLName, fatherSpec};
@@ -104,11 +99,11 @@ namespace StudentsApp
                         var Pclient = new StudentsServiceAppClient();
                         foreach (var item1 in Pclient.ParentsInfosInfoList())
                         {
-                            string phonesPar = string.Join(",", item1.Phones.Select(x => x.PhoneNumber.ToString()));
+                            string phonesPar = string.Join(",", item1.Phones.Select(x => x.PhoneNumber.ToString()).ToList());
                             string[] splitString6 = phonesPar.Split(',');
                             string phoneRel = splitString6[0].Trim();
                             var listView6 = new ListViewItem(phoneRel);
-                            listView6.Font = new Font("Times New Roman", 10, FontStyle.Bold);
+                            listView6.Font = new Font("Times New Roman", 11, FontStyle.Bold);
                             relationsPhones.Items.Add(listView6);
                         }
 
@@ -120,6 +115,16 @@ namespace StudentsApp
         
 
         private void listView5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondRow_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
