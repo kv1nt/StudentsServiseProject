@@ -596,7 +596,7 @@
             // 
             this.SaveChanges_btn.BackColor = System.Drawing.Color.White;
             this.SaveChanges_btn.Image = global::StudentsApp.Properties.Resources.Apply1;
-            this.SaveChanges_btn.Location = new System.Drawing.Point(944, 383);
+            this.SaveChanges_btn.Location = new System.Drawing.Point(946, 401);
             this.SaveChanges_btn.Name = "SaveChanges_btn";
             this.SaveChanges_btn.Size = new System.Drawing.Size(87, 50);
             this.SaveChanges_btn.TabIndex = 38;
