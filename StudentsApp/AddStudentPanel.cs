@@ -71,25 +71,28 @@ namespace StudentsApp
                     List<Phone> relationsPhones = new List<Phone>();
                     relationsPhones.Add(newParentsPhone);
 
-                    ParentsInfo newMotheInfo = new ParentsInfo();
-                    //newMotheInfo.Relation = (Relation)cbRelations.SelectedItems[0];
+                    ParentsInfo newMotheInfo = new ParentsInfo();                    
                     ParentsInfo newFatherInfo = new ParentsInfo();
-                   // ParentsInfo newRelationInfo = new ParentsInfo();
-                   // newRelationInfo.Relation = new Relation { Name = RelationField.Text };
+
+                   
+                    Relation newRelationInfo = new Relation();
+                    newRelationInfo.Name = RelationField.Text;
 
                     newMotheInfo.FirstName = MotherNameField.Text;
                     newMotheInfo.LastName = MotherLastNameField.Text;
                     newMotheInfo.WorkPlace = MotherWorkPlace.Text;
+                    newMotheInfo.Relation = newRelationInfo;
                     newMotheInfo.Phones = relationsPhones;
                     newFatherInfo.FirstName = FatherNameField.Text;
                     newFatherInfo.LastName = FatherLastNameField.Text;
                     newFatherInfo.WorkPlace = FatherWorkPlaseField.Text;
                     newFatherInfo.Phones = relationsPhones;
-                  
-                    List<ParentsInfo> parents = new List<ParentsInfo>();
+                    newFatherInfo.Relation = newRelationInfo;
+
+                   List<ParentsInfo> parents = new List<ParentsInfo>();
                     parents.Add(newMotheInfo);
                     parents.Add(newFatherInfo);
-                    //parents.Add(newRelationInfo);
+                   // parents.Add(newRelationInfo);
                     
                    
 

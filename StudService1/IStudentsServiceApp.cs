@@ -12,17 +12,21 @@ namespace StudService1
     [ServiceContract]
     public interface IStudentsServiceApp
     {      
-        [OperationContract]
-        void AddNewStudent(StudentInfo student); // Add main info
 
         [OperationContract]
         List<StudentInfo> StudetsInfoList();
+
+        [OperationContract]
+        List<ParentsInfo> ParentsInfosInfoList();
 
         [OperationContract]
         StudentInfo FindStudentById(int id);
 
         [OperationContract]
         void DeleteStudentById(int id);
+
+        [OperationContract]
+        void AddNewStudent(StudentInfo student); 
 
     }
 }

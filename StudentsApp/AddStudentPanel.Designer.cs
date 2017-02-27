@@ -39,6 +39,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.DateOfBirthField = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ProgressAddField = new System.Windows.Forms.TextBox();
             this.surnameAddField = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.NameField = new System.Windows.Forms.TextBox();
@@ -49,14 +51,16 @@
             this.label14 = new System.Windows.Forms.Label();
             this.AddMainInfo_btn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.FatherLastNameField = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.MotherLastNameField = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.GroupAddField = new System.Windows.Forms.TextBox();
             this.RelationField = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.PhonesRelatonsAddFielad = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.ProgressAddField = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.FatherWorkPlaseField = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.FatherNameField = new System.Windows.Forms.TextBox();
@@ -65,10 +69,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.MotherNameField = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.MotherLastNameField = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.FatherLastNameField = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -182,6 +182,22 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "По батькові";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(21, 325);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(64, 13);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Сер. оцінка";
+            // 
+            // ProgressAddField
+            // 
+            this.ProgressAddField.Location = new System.Drawing.Point(93, 322);
+            this.ProgressAddField.Name = "ProgressAddField";
+            this.ProgressAddField.Size = new System.Drawing.Size(234, 20);
+            this.ProgressAddField.TabIndex = 9;
+            // 
             // surnameAddField
             // 
             this.surnameAddField.Location = new System.Drawing.Point(93, 102);
@@ -285,6 +301,38 @@
             this.groupBox2.Text = "Введіть додаткову інформацію";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // FatherLastNameField
+            // 
+            this.FatherLastNameField.Location = new System.Drawing.Point(115, 210);
+            this.FatherLastNameField.Name = "FatherLastNameField";
+            this.FatherLastNameField.Size = new System.Drawing.Size(223, 20);
+            this.FatherLastNameField.TabIndex = 28;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(32, 213);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(56, 13);
+            this.label17.TabIndex = 27;
+            this.label17.Text = "Прізвище";
+            // 
+            // MotherLastNameField
+            // 
+            this.MotherLastNameField.Location = new System.Drawing.Point(115, 101);
+            this.MotherLastNameField.Name = "MotherLastNameField";
+            this.MotherLastNameField.Size = new System.Drawing.Size(223, 20);
+            this.MotherLastNameField.TabIndex = 26;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(32, 104);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(56, 13);
+            this.label16.TabIndex = 25;
+            this.label16.Text = "Прізвище";
+            // 
             // GroupAddField
             // 
             this.GroupAddField.Location = new System.Drawing.Point(115, 28);
@@ -294,7 +342,6 @@
             // 
             // RelationField
             // 
-            this.RelationField.Enabled = false;
             this.RelationField.Location = new System.Drawing.Point(115, 283);
             this.RelationField.Name = "RelationField";
             this.RelationField.Size = new System.Drawing.Size(223, 20);
@@ -308,15 +355,6 @@
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 21;
             this.label1.Text = "Близькі Род.";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(32, 31);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(36, 13);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "Група";
             // 
             // PhonesRelatonsAddFielad
             // 
@@ -334,21 +372,14 @@
             this.label15.TabIndex = 19;
             this.label15.Text = "Телефони";
             // 
-            // label10
+            // label11
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(21, 325);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Сер. оцінка";
-            // 
-            // ProgressAddField
-            // 
-            this.ProgressAddField.Location = new System.Drawing.Point(93, 322);
-            this.ProgressAddField.Name = "ProgressAddField";
-            this.ProgressAddField.Size = new System.Drawing.Size(234, 20);
-            this.ProgressAddField.TabIndex = 9;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(32, 31);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Група";
             // 
             // FatherWorkPlaseField
             // 
@@ -413,38 +444,6 @@
             this.label12.Size = new System.Drawing.Size(57, 13);
             this.label12.TabIndex = 4;
             this.label12.Text = "Матір Ім\'я";
-            // 
-            // MotherLastNameField
-            // 
-            this.MotherLastNameField.Location = new System.Drawing.Point(115, 101);
-            this.MotherLastNameField.Name = "MotherLastNameField";
-            this.MotherLastNameField.Size = new System.Drawing.Size(223, 20);
-            this.MotherLastNameField.TabIndex = 26;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(32, 104);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 13);
-            this.label16.TabIndex = 25;
-            this.label16.Text = "Прізвище";
-            // 
-            // FatherLastNameField
-            // 
-            this.FatherLastNameField.Location = new System.Drawing.Point(115, 210);
-            this.FatherLastNameField.Name = "FatherLastNameField";
-            this.FatherLastNameField.Size = new System.Drawing.Size(223, 20);
-            this.FatherLastNameField.TabIndex = 28;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(32, 213);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 13);
-            this.label17.TabIndex = 27;
-            this.label17.Text = "Прізвище";
             // 
             // AddStudentPanel
             // 

@@ -32,6 +32,15 @@ namespace StudService1
             }
         }
 
+        public List<ParentsInfo> ParentsInfosInfoList()
+        {
+            using (StudentsDbContext context = new StudentsDbContext())
+            {
+                var y = context.ParentsInfos.ToList().Select(x => x.Copy()).ToList();
+                return y;
+            }
+        }
+
         public StudentInfo FindStudentById(int id)
         {
             using (StudentsDbContext context = new StudentsDbContext())
@@ -45,23 +54,7 @@ namespace StudService1
         }
 
         public void DeleteStudentById(int id)
-        {
-            /*
-            StudentInfo studentToDelete;
-           
-            using (var ctx = new StudentsDbContext())
-            {
-                studentToDelete = ctx.StudentInfos.Where(s => s.Id == id).First<StudentInfo>();
-            }
-
-            using (var newContext = new StudentsDbContext())
-            {
-                newContext.Entry(studentToDelete).State = EntityState.Deleted;
-
-                newContext.SaveChanges();
-            }
-            */
-            
+        { 
             try
             {
                 using (StudentsDbContext context = new StudentsDbContext())

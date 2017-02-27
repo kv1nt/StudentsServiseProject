@@ -25,6 +25,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ParentsInfosInfoList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParentsInfosInfoListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="ParentsInfosInfoListResult" nillable="true" type="q3:ArrayOfParentsInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="FindStudentById">
     <xs:complexType>
       <xs:sequence>
@@ -35,7 +47,7 @@
   <xs:element name="FindStudentByIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="FindStudentByIdResult" nillable="true" type="q3:StudentInfo" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="FindStudentByIdResult" nillable="true" type="q4:StudentInfo" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

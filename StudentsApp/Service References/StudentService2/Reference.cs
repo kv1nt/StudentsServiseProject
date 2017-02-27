@@ -27,6 +27,12 @@ namespace StudentsApp.StudentService2 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/StudetsInfoList", ReplyAction="http://tempuri.org/IStudentsServiceApp/StudetsInfoListResponse")]
         System.Threading.Tasks.Task<DbEntities.StudentInfo[]> StudetsInfoListAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/ParentsInfosInfoList", ReplyAction="http://tempuri.org/IStudentsServiceApp/ParentsInfosInfoListResponse")]
+        DbEntities.ParentsInfo[] ParentsInfosInfoList();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/ParentsInfosInfoList", ReplyAction="http://tempuri.org/IStudentsServiceApp/ParentsInfosInfoListResponse")]
+        System.Threading.Tasks.Task<DbEntities.ParentsInfo[]> ParentsInfosInfoListAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentsServiceApp/FindStudentById", ReplyAction="http://tempuri.org/IStudentsServiceApp/FindStudentByIdResponse")]
         DbEntities.StudentInfo FindStudentById(int id);
         
@@ -81,6 +87,14 @@ namespace StudentsApp.StudentService2 {
         
         public System.Threading.Tasks.Task<DbEntities.StudentInfo[]> StudetsInfoListAsync() {
             return base.Channel.StudetsInfoListAsync();
+        }
+        
+        public DbEntities.ParentsInfo[] ParentsInfosInfoList() {
+            return base.Channel.ParentsInfosInfoList();
+        }
+        
+        public System.Threading.Tasks.Task<DbEntities.ParentsInfo[]> ParentsInfosInfoListAsync() {
+            return base.Channel.ParentsInfosInfoListAsync();
         }
         
         public DbEntities.StudentInfo FindStudentById(int id) {

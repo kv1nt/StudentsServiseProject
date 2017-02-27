@@ -50,22 +50,22 @@
             this.numbBook_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.address_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.GPA_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label4 = new System.Windows.Forms.Label();
+            this.group_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.motherInfoList = new System.Windows.Forms.ListView();
             this.motherName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.motherLname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.motherSpec = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.group_col = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView3 = new System.Windows.Forms.ListView();
+            this.fatherInfo = new System.Windows.Forms.ListView();
             this.fatherName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.fatherLname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.fatherSpec = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView4 = new System.Windows.Forms.ListView();
+            this.additionalRel = new System.Windows.Forms.ListView();
             this.relations = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView5 = new System.Windows.Forms.ListView();
+            this.relationsPhones = new System.Windows.Forms.ListView();
             this.relPhones = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.studPhoto = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studPhoto)).BeginInit();
@@ -75,7 +75,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 29);
+            this.label1.Location = new System.Drawing.Point(20, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 0;
@@ -88,16 +88,16 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(0, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(488, 71);
+            this.groupBox1.Size = new System.Drawing.Size(464, 62);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Пошук студента за прізвищем";
             // 
             // FindStudentByLastName
             // 
-            this.FindStudentByLastName.Location = new System.Drawing.Point(385, 23);
+            this.FindStudentByLastName.Location = new System.Drawing.Point(364, 21);
             this.FindStudentByLastName.Name = "FindStudentByLastName";
-            this.FindStudentByLastName.Size = new System.Drawing.Size(88, 28);
+            this.FindStudentByLastName.Size = new System.Drawing.Size(78, 28);
             this.FindStudentByLastName.TabIndex = 2;
             this.FindStudentByLastName.Text = "Пошук";
             this.FindStudentByLastName.UseVisualStyleBackColor = true;
@@ -105,7 +105,7 @@
             // 
             // IDStudTextBox
             // 
-            this.IDStudTextBox.Location = new System.Drawing.Point(139, 28);
+            this.IDStudTextBox.Location = new System.Drawing.Point(118, 26);
             this.IDStudTextBox.Name = "IDStudTextBox";
             this.IDStudTextBox.Size = new System.Drawing.Size(231, 20);
             this.IDStudTextBox.TabIndex = 1;
@@ -169,9 +169,9 @@
             this.birthday_col,
             this.mphone_col});
             this.listViewStud.GridLines = true;
-            this.listViewStud.Location = new System.Drawing.Point(0, 110);
+            this.listViewStud.Location = new System.Drawing.Point(0, 72);
             this.listViewStud.Name = "listViewStud";
-            this.listViewStud.Size = new System.Drawing.Size(1168, 80);
+            this.listViewStud.Size = new System.Drawing.Size(1168, 63);
             this.listViewStud.TabIndex = 4;
             this.listViewStud.UseCompatibleStateImageBehavior = false;
             this.listViewStud.View = System.Windows.Forms.View.Details;
@@ -179,7 +179,6 @@
             // id_col
             // 
             this.id_col.Text = "ID";
-            this.id_col.Width = 32;
             // 
             // name_col
             // 
@@ -214,7 +213,7 @@
             // mphone_col
             // 
             this.mphone_col.Text = "Мобільнй телефон";
-            this.mphone_col.Width = 259;
+            this.mphone_col.Width = 230;
             // 
             // secondRow
             // 
@@ -224,9 +223,9 @@
             this.GPA_col,
             this.group_col});
             this.secondRow.GridLines = true;
-            this.secondRow.Location = new System.Drawing.Point(0, 205);
+            this.secondRow.Location = new System.Drawing.Point(0, 141);
             this.secondRow.Name = "secondRow";
-            this.secondRow.Size = new System.Drawing.Size(667, 46);
+            this.secondRow.Size = new System.Drawing.Size(667, 53);
             this.secondRow.TabIndex = 5;
             this.secondRow.UseCompatibleStateImageBehavior = false;
             this.secondRow.View = System.Windows.Forms.View.Details;
@@ -246,15 +245,10 @@
             this.GPA_col.Text = "Сер.оцінка";
             this.GPA_col.Width = 75;
             // 
-            // label4
+            // group_col
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(451, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(253, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Повна інформація про студента";
+            this.group_col.Text = "Група";
+            this.group_col.Width = 142;
             // 
             // motherInfoList
             // 
@@ -263,9 +257,9 @@
             this.motherLname,
             this.motherSpec});
             this.motherInfoList.GridLines = true;
-            this.motherInfoList.Location = new System.Drawing.Point(0, 257);
+            this.motherInfoList.Location = new System.Drawing.Point(0, 219);
             this.motherInfoList.Name = "motherInfoList";
-            this.motherInfoList.Size = new System.Drawing.Size(667, 44);
+            this.motherInfoList.Size = new System.Drawing.Size(667, 54);
             this.motherInfoList.TabIndex = 8;
             this.motherInfoList.UseCompatibleStateImageBehavior = false;
             this.motherInfoList.View = System.Windows.Forms.View.Details;
@@ -285,24 +279,19 @@
             this.motherSpec.Text = "Спеціальність";
             this.motherSpec.Width = 299;
             // 
-            // group_col
+            // fatherInfo
             // 
-            this.group_col.Text = "Група";
-            this.group_col.Width = 142;
-            // 
-            // listView3
-            // 
-            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.fatherInfo.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.fatherName,
             this.fatherLname,
             this.fatherSpec});
-            this.listView3.GridLines = true;
-            this.listView3.Location = new System.Drawing.Point(0, 307);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(667, 44);
-            this.listView3.TabIndex = 9;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.Details;
+            this.fatherInfo.GridLines = true;
+            this.fatherInfo.Location = new System.Drawing.Point(0, 279);
+            this.fatherInfo.Name = "fatherInfo";
+            this.fatherInfo.Size = new System.Drawing.Size(667, 53);
+            this.fatherInfo.TabIndex = 9;
+            this.fatherInfo.UseCompatibleStateImageBehavior = false;
+            this.fatherInfo.View = System.Windows.Forms.View.Details;
             // 
             // fatherName
             // 
@@ -319,34 +308,35 @@
             this.fatherSpec.Text = "Спеціальність";
             this.fatherSpec.Width = 299;
             // 
-            // listView4
+            // additionalRel
             // 
-            this.listView4.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.additionalRel.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.relations});
-            this.listView4.GridLines = true;
-            this.listView4.Location = new System.Drawing.Point(0, 357);
-            this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(667, 44);
-            this.listView4.TabIndex = 10;
-            this.listView4.UseCompatibleStateImageBehavior = false;
-            this.listView4.View = System.Windows.Forms.View.Details;
+            this.additionalRel.GridLines = true;
+            this.additionalRel.Location = new System.Drawing.Point(0, 338);
+            this.additionalRel.Name = "additionalRel";
+            this.additionalRel.Size = new System.Drawing.Size(667, 54);
+            this.additionalRel.TabIndex = 10;
+            this.additionalRel.UseCompatibleStateImageBehavior = false;
+            this.additionalRel.View = System.Windows.Forms.View.Details;
             // 
             // relations
             // 
             this.relations.Text = "Найближчі родичі ФІП";
             this.relations.Width = 663;
             // 
-            // listView5
+            // relationsPhones
             // 
-            this.listView5.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.relationsPhones.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.relPhones});
-            this.listView5.GridLines = true;
-            this.listView5.Location = new System.Drawing.Point(0, 407);
-            this.listView5.Name = "listView5";
-            this.listView5.Size = new System.Drawing.Size(667, 44);
-            this.listView5.TabIndex = 11;
-            this.listView5.UseCompatibleStateImageBehavior = false;
-            this.listView5.View = System.Windows.Forms.View.Details;
+            this.relationsPhones.GridLines = true;
+            this.relationsPhones.Location = new System.Drawing.Point(0, 395);
+            this.relationsPhones.Name = "relationsPhones";
+            this.relationsPhones.Size = new System.Drawing.Size(667, 56);
+            this.relationsPhones.TabIndex = 11;
+            this.relationsPhones.UseCompatibleStateImageBehavior = false;
+            this.relationsPhones.View = System.Windows.Forms.View.Details;
+            this.relationsPhones.SelectedIndexChanged += new System.EventHandler(this.listView5_SelectedIndexChanged);
             // 
             // relPhones
             // 
@@ -366,23 +356,33 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.studPhoto);
-            this.groupBox3.Location = new System.Drawing.Point(795, 205);
+            this.groupBox3.Location = new System.Drawing.Point(795, 173);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(250, 246);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Фото";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(214, 197);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(228, 17);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Інформація про родичів студента";
+            // 
             // FindStudentPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.listView5);
-            this.Controls.Add(this.listView4);
-            this.Controls.Add(this.listView3);
-            this.Controls.Add(this.motherInfoList);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.relationsPhones);
+            this.Controls.Add(this.additionalRel);
+            this.Controls.Add(this.fatherInfo);
+            this.Controls.Add(this.motherInfoList);
             this.Controls.Add(this.secondRow);
             this.Controls.Add(this.listViewStud);
             this.Controls.Add(this.label3);
@@ -425,21 +425,21 @@
         private System.Windows.Forms.ColumnHeader numbBook_col;
         private System.Windows.Forms.ColumnHeader address_col;
         private System.Windows.Forms.ColumnHeader GPA_col;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListView motherInfoList;
         private System.Windows.Forms.ColumnHeader motherName;
         private System.Windows.Forms.ColumnHeader motherLname;
         private System.Windows.Forms.ColumnHeader motherSpec;
         private System.Windows.Forms.ColumnHeader group_col;
-        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ListView fatherInfo;
         private System.Windows.Forms.ColumnHeader fatherName;
         private System.Windows.Forms.ColumnHeader fatherLname;
         private System.Windows.Forms.ColumnHeader fatherSpec;
-        private System.Windows.Forms.ListView listView4;
+        private System.Windows.Forms.ListView additionalRel;
         private System.Windows.Forms.ColumnHeader relations;
-        private System.Windows.Forms.ListView listView5;
+        private System.Windows.Forms.ListView relationsPhones;
         private System.Windows.Forms.ColumnHeader relPhones;
         private System.Windows.Forms.PictureBox studPhoto;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label4;
     }
 }
