@@ -26,7 +26,20 @@ namespace StudService1
         void DeleteStudentById(int id);
 
         [OperationContract]
-        void AddNewStudent(StudentInfo student); 
+        void AddNewStudent(StudentInfo student);
+
+        [OperationContract]
+        void UpdateStudent(int id, string nameSt, string lastNameSt, string surnameSt, int ageSt,
+                           string addressSt, string groupSt, int numbRecBook, DateTime dateOfBirthSt,
+                           float progressSt, List<Phone> phonesSt);
+
+        [OperationContract]
+        void UpdateParents(string motherName, string motherLastName, string motherWorkPlace,
+                           string fatherName, string fatherLastName, string fatherWorkPlace, int motherId, int fatherId);
+
+        [OperationContract]
+        void UpdateAdditionalRelations(string relationInfo, int relationId);
+
 
     }
 }

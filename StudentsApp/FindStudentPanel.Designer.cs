@@ -172,7 +172,7 @@
             this.listViewStud.GridLines = true;
             this.listViewStud.Location = new System.Drawing.Point(0, 68);
             this.listViewStud.Name = "listViewStud";
-            this.listViewStud.Size = new System.Drawing.Size(1168, 59);
+            this.listViewStud.Size = new System.Drawing.Size(1168, 60);
             this.listViewStud.TabIndex = 4;
             this.listViewStud.UseCompatibleStateImageBehavior = false;
             this.listViewStud.View = System.Windows.Forms.View.Details;
@@ -188,13 +188,13 @@
             // 
             // patronymic_col
             // 
-            this.patronymic_col.Text = "Прізвище";
-            this.patronymic_col.Width = 199;
+            this.patronymic_col.Text = "По батькові";
+            this.patronymic_col.Width = 195;
             // 
             // surname_col
             // 
-            this.surname_col.Text = "По батькові";
-            this.surname_col.Width = 215;
+            this.surname_col.Text = "Прізвище";
+            this.surname_col.Width = 218;
             // 
             // sex_col
             // 
@@ -204,7 +204,7 @@
             // age_col
             // 
             this.age_col.Text = "Вік";
-            this.age_col.Width = 52;
+            this.age_col.Width = 56;
             // 
             // birthday_col
             // 

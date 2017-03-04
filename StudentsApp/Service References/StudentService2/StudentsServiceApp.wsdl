@@ -7,12 +7,6 @@
       <xsd:import schemaLocation="http://localhost:4563/StudentsServiceApp.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DbEntities" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IStudentsServiceApp_AddNewStudent_InputMessage">
-    <wsdl:part name="parameters" element="tns:AddNewStudent" />
-  </wsdl:message>
-  <wsdl:message name="IStudentsServiceApp_AddNewStudent_OutputMessage">
-    <wsdl:part name="parameters" element="tns:AddNewStudentResponse" />
-  </wsdl:message>
   <wsdl:message name="IStudentsServiceApp_StudetsInfoList_InputMessage">
     <wsdl:part name="parameters" element="tns:StudetsInfoList" />
   </wsdl:message>
@@ -37,11 +31,31 @@
   <wsdl:message name="IStudentsServiceApp_DeleteStudentById_OutputMessage">
     <wsdl:part name="parameters" element="tns:DeleteStudentByIdResponse" />
   </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_AddNewStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_AddNewStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_UpdateStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_UpdateStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_UpdateParents_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateParents" />
+  </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_UpdateParents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateParentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_UpdateAdditionalRelations_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAdditionalRelations" />
+  </wsdl:message>
+  <wsdl:message name="IStudentsServiceApp_UpdateAdditionalRelations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAdditionalRelationsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IStudentsServiceApp">
-    <wsdl:operation name="AddNewStudent">
-      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/AddNewStudent" message="tns:IStudentsServiceApp_AddNewStudent_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/AddNewStudentResponse" message="tns:IStudentsServiceApp_AddNewStudent_OutputMessage" />
-    </wsdl:operation>
     <wsdl:operation name="StudetsInfoList">
       <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/StudetsInfoList" message="tns:IStudentsServiceApp_StudetsInfoList_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/StudetsInfoListResponse" message="tns:IStudentsServiceApp_StudetsInfoList_OutputMessage" />
@@ -58,18 +72,25 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/DeleteStudentById" message="tns:IStudentsServiceApp_DeleteStudentById_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/DeleteStudentByIdResponse" message="tns:IStudentsServiceApp_DeleteStudentById_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="AddNewStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/AddNewStudent" message="tns:IStudentsServiceApp_AddNewStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/AddNewStudentResponse" message="tns:IStudentsServiceApp_AddNewStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/UpdateStudent" message="tns:IStudentsServiceApp_UpdateStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/UpdateStudentResponse" message="tns:IStudentsServiceApp_UpdateStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/UpdateParents" message="tns:IStudentsServiceApp_UpdateParents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/UpdateParentsResponse" message="tns:IStudentsServiceApp_UpdateParents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdditionalRelations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentsServiceApp/UpdateAdditionalRelations" message="tns:IStudentsServiceApp_UpdateAdditionalRelations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentsServiceApp/UpdateAdditionalRelationsResponse" message="tns:IStudentsServiceApp_UpdateAdditionalRelations_OutputMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IStudentsServiceApp" type="tns:IStudentsServiceApp">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="AddNewStudent">
-      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/AddNewStudent" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="StudetsInfoList">
       <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/StudetsInfoList" style="document" />
       <wsdl:input>
@@ -99,6 +120,42 @@
     </wsdl:operation>
     <wsdl:operation name="DeleteStudentById">
       <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/DeleteStudentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewStudent">
+      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/AddNewStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudent">
+      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/UpdateStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParents">
+      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/UpdateParents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdditionalRelations">
+      <soap:operation soapAction="http://tempuri.org/IStudentsServiceApp/UpdateAdditionalRelations" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

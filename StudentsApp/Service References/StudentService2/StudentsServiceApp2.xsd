@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DbEntities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DbEntities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfStudentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudentInfo" nillable="true" type="tns:StudentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudentInfo" nillable="true" type="tns:ArrayOfStudentInfo" />
   <xs:complexType name="StudentInfo">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:IdEntity">
@@ -103,10 +109,4 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="StudentProgress" nillable="true" type="tns:StudentProgress" />
-  <xs:complexType name="ArrayOfStudentInfo">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudentInfo" nillable="true" type="tns:StudentInfo" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfStudentInfo" nillable="true" type="tns:ArrayOfStudentInfo" />
 </xs:schema>

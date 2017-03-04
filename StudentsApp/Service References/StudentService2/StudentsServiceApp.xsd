@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:4563/StudentsServiceApp.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DbEntities" />
-  <xs:element name="AddNewStudent">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="student" nillable="true" type="q1:StudentInfo" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="AddNewStudentResponse">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
   <xs:element name="StudetsInfoList">
     <xs:complexType>
       <xs:sequence />
@@ -21,7 +9,7 @@
   <xs:element name="StudetsInfoListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="StudetsInfoListResult" nillable="true" type="q2:ArrayOfStudentInfo" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="StudetsInfoListResult" nillable="true" type="q1:ArrayOfStudentInfo" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -33,7 +21,7 @@
   <xs:element name="ParentsInfosInfoListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="ParentsInfosInfoListResult" nillable="true" type="q3:ArrayOfParentsInfo" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="ParentsInfosInfoListResult" nillable="true" type="q2:ArrayOfParentsInfo" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -47,7 +35,7 @@
   <xs:element name="FindStudentByIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="FindStudentByIdResult" nillable="true" type="q4:StudentInfo" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="FindStudentByIdResult" nillable="true" type="q3:StudentInfo" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -59,6 +47,72 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="DeleteStudentByIdResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddNewStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="student" nillable="true" type="q4:StudentInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddNewStudentResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="nameSt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastNameSt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="surnameSt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ageSt" type="xs:int" />
+        <xs:element minOccurs="0" name="addressSt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="groupSt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numbRecBook" type="xs:int" />
+        <xs:element minOccurs="0" name="dateOfBirthSt" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="progressSt" type="xs:float" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DbEntities" minOccurs="0" name="phonesSt" nillable="true" type="q5:ArrayOfPhone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStudentResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateParents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="motherName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="motherLastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="motherWorkPlace" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fatherName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fatherLastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fatherWorkPlace" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="motherId" type="xs:int" />
+        <xs:element minOccurs="0" name="fatherId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateParentsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAdditionalRelations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="relationInfo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="relationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAdditionalRelationsResponse">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>

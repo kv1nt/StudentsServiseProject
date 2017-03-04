@@ -21,3 +21,4 @@ C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\StudService1.dll
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\DbEntities.pdb
 C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\bin\Debug\StudService1.pdb
+C:\Users\vitaliy\documents\visual studio 2015\Projects\StudService1\StudentsApp\obj\Debug\StudentsApp.CreateUserControl.resources

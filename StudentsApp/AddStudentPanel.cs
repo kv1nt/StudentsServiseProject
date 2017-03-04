@@ -64,7 +64,6 @@ namespace StudentsApp
                     Group newGroup = new Group();
                     newGroup.Speciality = GroupAddField.Text;
 
-
                     Phone newParentsPhone = new Phone();
                     newParentsPhone.PhoneNumber = PhonesRelatonsAddFielad.Text;
 
@@ -91,7 +90,7 @@ namespace StudentsApp
                    List<ParentsInfo> parents = new List<ParentsInfo>();
                     parents.Add(newMotheInfo);
                     parents.Add(newFatherInfo);
-                   // parents.Add(newRelationInfo);
+                   //parents.Add(newRelationInfo);
                     
                    
 

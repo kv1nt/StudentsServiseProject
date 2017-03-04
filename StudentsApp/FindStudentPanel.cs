@@ -33,7 +33,13 @@ namespace StudentsApp
 
         private void FindStudentByLastName_Click(object sender, EventArgs e)
         {
-         
+            listViewStud.Items.Clear();
+            secondRow.Items.Clear();
+            motherInfoList.Items.Clear();
+            fatherInfo.Items.Clear();
+            additionalRel.Items.Clear();
+            relationsPhones.Items.Clear();
+
             var id = Convert.ToInt32(IDStudTextBox.Text);
 
             using (StudentsServiceAppClient client = new StudentsServiceAppClient())
@@ -81,19 +87,19 @@ namespace StudentsApp
                         string[] row4 = {fatherFName, fatherLName, fatherSpec};
                       
                         var listView = new ListViewItem(row);
-                        listView.Font = new Font("Times New Roman", 11, FontStyle.Bold);
+                        listView.Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
                         listViewStud.Items.Add(listView);
                         var listView1 = new ListViewItem(row2);
-                        listView1.Font = new Font("Times New Roman", 11, FontStyle.Bold);
+                        listView1.Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
                         secondRow.Items.Add(listView1);
                         var listView3 = new ListViewItem(row3);
-                        listView3.Font = new Font("Times New Roman", 11, FontStyle.Bold);
+                        listView3.Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
                         motherInfoList.Items.Add(listView3);
                         var listView4 = new ListViewItem(row4);
-                        listView4.Font = new Font("Times New Roman", 11, FontStyle.Bold);
+                        listView4.Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
                         fatherInfo.Items.Add(listView4);
                         var listView5 = new ListViewItem(additionalRels);
-                        listView5.Font = new Font("Times New Roman", 11, FontStyle.Bold);
+                        listView5.Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
                         additionalRel.Items.Add(listView5);
 
                         var Pclient = new StudentsServiceAppClient();
@@ -103,7 +109,7 @@ namespace StudentsApp
                             string[] splitString6 = phonesPar.Split(',');
                             string phoneRel = splitString6[0].Trim();
                             var listView6 = new ListViewItem(phoneRel);
-                            listView6.Font = new Font("Times New Roman", 11, FontStyle.Bold);
+                            listView6.Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
                             relationsPhones.Items.Add(listView6);
                         }
 

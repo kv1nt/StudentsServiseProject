@@ -69,6 +69,12 @@
     <Compile Include="AllStudentsListView.Designer.cs">
       <DependentUpon>AllStudentsListView.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateUserControl.Designer.cs">
+      <DependentUpon>CreateUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="FindStudentPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllStudentsListView.resx">
       <DependentUpon>AllStudentsListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUserControl.resx">
+      <DependentUpon>CreateUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FindStudentPanel.resx">
       <DependentUpon>FindStudentPanel.cs</DependentUpon>
